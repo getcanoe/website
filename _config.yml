@@ -1,0 +1,9 @@
+# Site settings
+title: Currrva 
+email: hello@gmail.com 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://currrva.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+exclude: ["vendor"]
