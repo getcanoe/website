@@ -4,7 +4,7 @@ layout: main
 
 # Contribute 
 
-Make a donation to support the work on Canoe Wallet and other future RaiBlocks initiatives. The donation will be distributed evenly among the Canoe team.
+Make a donation to support our work on Canoe Wallet and other future RaiBlocks initiatives. The donation will be distributed evenly among the Canoe team.
 
 ![img]({{ "/assets/img/donate.png" | absolute_url }})
 
