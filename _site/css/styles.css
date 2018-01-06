@@ -33,7 +33,7 @@ a { text-decoration: none; color: white; }
 
 a.button { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; color: white; font-size: 14px; font-size: 1.4rem; font-weight: 600; line-height: 24px; background: #1fbde2; padding: 10px 30px; }
 
-.container { width: 1050px; margin: 0 auto; padding-top: 130px; }
+.container { width: 1050px; margin: 0 auto; padding-top: 80px; }
 
 .content { width: 1010px; margin: 0 auto; }
 
@@ -262,6 +262,7 @@ footer .container .content div:not(.clear) img { width: 40px; height: 40px; }
 .download-button button:hover {
 	box-shadow: 2px 2px 2px rgba(0,0,0,.16);
 	box-shadow: 1px 1px 1px rgba(0,0,0,.26);
+	background: rgba(255,255,255,.2);
 }
 
 #header-text h3 {margin: 20px 0;}
@@ -275,9 +276,40 @@ footer .container .content div:not(.clear) img { width: 40px; height: 40px; }
 	z-index: 99999;
 }
 
+.alpha-warning p {
+	margin: 0 50px;
+}
+
 .nav-links li{
 	display: inline-block;
 	margin-right: 40px;
 	font-size: 2.5em;
 	text-shadow: 3px 2px 2px rgba(0,0,0,.18);
+}
+
+@media screen and (max-width: 1042px) {
+	div#header-text {
+		margin-bottom: 20px;
+	}
+	ul.nav-links, .content{
+		margin-left: 40px;
+	}
+	#page-home #header .container .content #header-text {
+		margin-right: 0%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#page-home #header .container .content #header-img {
+	}
+	.feature-text {
+	}
+	#page-home .feature img{
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.nav-links li {
+		font-size: 1.85em;
+	}
 }
