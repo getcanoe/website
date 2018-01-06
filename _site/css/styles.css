@@ -10,7 +10,7 @@ ul, ol { list-style: none; }
 
 .clear { clear: both; }
 
-body { font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; color: #9da5a9; font-size: 16px; font-size: 1.6rem; line-height: 1em; background: #333333; min-width: 1050px; }
+body { font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; color: #9da5a9; font-size: 16px; font-size: 1.6rem; line-height: 1em; background: #333333; min-width: 1050px; }
 
 p { line-height: 1.6em; margin-bottom: 20px; }
 
@@ -274,7 +274,7 @@ footer .container .content div:not(.clear) img { width: 40px; height: 40px; }
 	top: 0;
 	text-align:center;
 	width: 100%;
-	padding: 20px 0px;
+	padding: 10px 0px;
 }
 
 #nav ul {
@@ -285,6 +285,7 @@ footer .container .content div:not(.clear) img { width: 40px; height: 40px; }
 	margin: 0px 40px;
 	font-size: 30px;
 	text-transform: uppercase;
+	line-height: 1.5em;
 }
 
 .alpha-warning {
@@ -292,11 +293,14 @@ footer .container .content div:not(.clear) img { width: 40px; height: 40px; }
 	color: white;
 	position: absolute;
 	width: 100%;
-	font-size: 19px;
+	height: 100%;
+	font-size: 16px;
 	box-shadow: 1px 2px 4px rgba(0,0,0,0.32);
 }
 
 .alpha-warning p {
 	padding: 0px 100px;
 	text-align: left;
+	margin-top: 6px;
+	
 }

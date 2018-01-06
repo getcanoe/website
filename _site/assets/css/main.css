@@ -773,7 +773,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #515151;
   background-color: #fbfbfb;
   margin: 0;
@@ -953,7 +953,7 @@ table tfoot td {
 }
 
 .about .author-name {
-  font-family: 'PT Serif', serif;
+  font-family: 'Montserrat', serif;
   margin: 0 0 10px;
   position: relative;
   padding-bottom: 15px;
@@ -1146,7 +1146,7 @@ footer .copyright {
 }
 
 .post .post-content .post-title a {
-  font-family: 'PT Serif', serif;
+  font-family: 'Montserrat', serif;
   text-decoration: none;
   color: #263959;
 }
@@ -1445,4 +1445,21 @@ a.newer-posts:hover {
   .post .post-content .post-title a {
     font-size: 21px;
   }
+}
+
+/* Custom theme updates */
+.sidebar ul li  {
+	list-style-type: none;
+	text-align: left;
+}
+
+.sidebar ul li a {
+	text-decoration:none;
+	color: #123238;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+.about .author-name::after {
+	content: none;
 }
