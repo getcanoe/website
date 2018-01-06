@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Canoe&#58; First Mobile Wallet for RaiBlocks 
+title: Canoe Wallet&#58; First Mobile Wallet for RaiBlocks 
 date: 2017-09-12 00:00:00 +0300
 description: 
 img: yapese-canoe.jpg 
@@ -13,7 +13,7 @@ We are releasing Canoe early because we want to get it in the hands of the commu
 
 Finally, please be aware that Canoe is still in it's very early stages, so do not use it with amounts you are uncomfortable losing. Here is a non-exhaustive list of Canoe's current shortcomings:
 
-### Security
+# Security
 
 The security of the current model is based on people trusting us to not steal their money. Kinda like any exchange. This is because the current architecture relies on the "wallet" parts of the RPC, which means Canoe is sending seed and keys etc through HTTPS to our server. So if a hacker gets root access to our servers, they can do some serious damage.
 
@@ -22,11 +22,11 @@ These two are big fat security issues that we plan to fix in the beta release by
 
 Finally, we are doing server side PoW, so... if a LOT of people start using it - the server will not manage. We are not sure what number "a LOT" is.
 
-### Usability
+# Usability
 
 - The wallet doesn't auto update, it will do that later, but right now it fetches balances etc when you go to home or "pull down" on home.
 - We haven't yet implemented the Account details page with txns.
 -  We are not showing "pending" transaction yet
 
-### Contribute
+# Contribute
 Thank you for being part of this project at such an early stage. If you'd like to contribute to Canoe, you can help us by reporting issues, fixing bugs, translating, or donating.
