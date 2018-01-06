@@ -1,9 +1,38 @@
 # Site settings
-title: Currrva 
-email: hello@gmail.com 
+title: Canoe Wallet 
+email: hello@getcanoe.io 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://currrva.com" # the base hostname & protocol for your site
+url: "http://getcanoe.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 exclude: ["vendor"]
+
+site-twitter: canoewallet #if your site has a twitter account, enter it here
+
+# Author Settings
+author: Canoe Wallet Blog
+author-img: canoe-icon.png 
+description: Canoe is 
+about-author:  # add description
+twitter: canoewallet # add your Twitter handle
+github: getcanoe # add your Github handle
+email: hello@getcanoe.io # add your Email address
+
+# Tracker
+analytics: # Google Analytics
+
+# Build Settings
+markdown: kramdown
+plugins_dir:
+  - jekyll-sitemap
+  - jemoji
+
+gems:
+  - jekyll-paginate
+
+paginate: 10
+
+paginate_path: "/blog/page:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
