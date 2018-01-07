@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Canoe Wallet&#58; First Mobile Wallet for RaiBlocks 
-date: 2017-09-12 00:00:00 +0300
+date: 2018-01-05 00:00:00 +0300
 description: 
 img: yapese-canoe.jpg 
 tags: [canoe, mobile, launch, alpha] # add tag
