@@ -3,6 +3,7 @@ title: Canoe
 email: hello@getcanoe.io 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://getcanoe.io" # the base hostname & protocol for your site
+timezone: America/New_York
 
 # Build settings
 markdown: kramdown
