@@ -932,7 +932,6 @@ table tfoot td {
   -webkit-border-radius: 100%;
           border-radius: 100%;
   overflow: hidden;
-  background-color: #333030;
 }
 
 .about img {
@@ -1448,6 +1447,12 @@ a.newer-posts:hover {
 }
 
 /* Custom theme updates */
+.sidebar {
+	background: #70C4B2;
+	color: white;
+}
+
+
 .sidebar ul li  {
 	list-style-type: none;
 	text-align: left;
@@ -1455,9 +1460,23 @@ a.newer-posts:hover {
 
 .sidebar ul li a {
 	text-decoration:none;
-	color: #123238;
+	color: white;
 	font-size: 1.5em;
 	line-height: 2em;
+}
+
+.about .author-name,
+.contact .contact-title {
+	color: white;
+}
+
+.contact .contact-title:after,
+.contact .contact-title:before {
+	background-color: white;
+}
+
+.about .author-name, .contact .contact-title {
+	font-weight: 700;
 }
 
 .about .author-name::after {

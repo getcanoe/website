@@ -12,7 +12,7 @@ site-twitter: canoewallet #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Canoe Blog
-author-img: canoe-icon.png 
+author-img: canoe-icon-negative.png 
 description: Canoe is 
 about-author:  # add description
 twitter: canoewallet # add your Twitter handle
