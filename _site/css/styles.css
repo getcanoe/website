@@ -295,10 +295,6 @@ footer .container .content div:not(.clear) img { width: 40px; height: 40px; }
 	text-transform: uppercase;
 }
 
-.nav-links li:hover{
-	border-bottom: 2px solid rgba(255,255,255,.7);
-	padding-bottom: 6px;
-}
 
 @media screen and (max-width: 1042px) {
 	div#header-text {
@@ -335,4 +331,61 @@ button.disable {
 
 button.disable:hover {
 	background: rgba(255,255,255,.0);
+}
+
+.sidebar .about ul li {
+  vertical-align: middle;
+  position: relative;
+}
+
+ul.nav-links li a {
+  text-decoration: none;
+  color: rgba(255,255,255,1);
+  position: relative;
+  padding: 16px 7px;
+  border-top: 2px solid rgba(255,255,255,0);
+  border-bottom: 2px solid rgba(255,255,255,0);
+  transition: padding .3s,border-color .3s;
+}
+
+ul.nav-links ul li a:focus, ul.nav-links li a:hover {
+  padding: 5px 7px;
+  border-color: rgba(255,255,255,1);
+  outline: none;
+}
+
+ul.nav-links li a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 0;
+  color: rgba(255,255,255,0);
+  border-left: 2px solid rgba(255,255,255,0);
+  content: attr(data-text);
+  transition: max-height .3s,border-color 0s;
+}
+
+ ul.nav-links li a::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+	top: 0;
+  padding: 5px;
+  max-height: 0;
+  color: rgba(255,255,255,0);
+  border-right: 2px solid rgba(255,255,255,0);
+  content: attr(data-text);
+  transition: max-height .3s,border-color 0s;
+}
+
+ul.nav-links li a:focus::before,
+ul.nav-links li a:hover::before,
+ul.nav-links li a:focus::after,
+ul.nav-links li a:hover::after {
+  max-height: 100%;
+  transition-delay: .28s;
+  border-color: rgba(255,255,255,1);
 }
