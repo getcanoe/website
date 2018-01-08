@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Canoe Wallet&#58; First Mobile Wallet for RaiBlocks 
-date: 2018-01-08 00:00:00 +0300
+date: 2018-01-05 10:00:00
 description: 
 img: yapese-canoe.jpg 
 tags: [canoe, mobile, launch, alpha] # add tag
@@ -26,6 +26,7 @@ Finally, we are doing server side PoW, so... if a LOT of people start using it -
 
 - The wallet doesn't auto update, it will do that later, but right now it fetches balances etc when you go to home or "pull down" on home.
 - We haven't yet implemented the Account details page with txns.
+-  We are not showing "pending" transaction yet
 
 # Contribute
 Thank you for being part of this project at such an early stage. If you'd like to contribute to Canoe, you can help us by reporting issues, fixing bugs, translating, or donating.
