@@ -4,6 +4,7 @@ title: Canoe Is Born
 date: 2018-01-05 08:00:00
 description: 
 img: yapese-canoe.jpg 
+author: gokr
 tags: [canoe, mobile] # add tag
 ---
 
@@ -52,5 +53,3 @@ And we have over **600 people signed up to try out the alpha**!
 We invite anyone to contribute to Canoe, you can help us by joining as developer, reporting issues, fixing bugs, translating, chatting encouraging words on discord - or donating.
 
 This is true Open Source. Everyone can be a part. Everything done in the open. :)
-
-regards, Göran Krampe (gokr)

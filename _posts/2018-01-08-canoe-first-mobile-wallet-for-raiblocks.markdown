@@ -4,6 +4,7 @@ title: Canoe Wallet&#58; First Mobile Wallet for RaiBlocks
 date: 2018-01-08 10:00:00
 description: 
 img: yapese-canoe.jpg 
+author: rami
 tags: [canoe, mobile, launch, alpha] # add tag
 ---
 
@@ -45,5 +46,4 @@ Finally, we are doing server side PoW, so... if a LOT of people start using it -
 # Contribute
 Thank you for being part of this project at such an early stage. If you'd like to contribute to Canoe, you can help us by reporting issues, fixing bugs, translating, or donating.
 
-
-regards, the Canoe Team (gokr, Eunji, rami)
+regards, the Canoe Team
