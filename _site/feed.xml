@@ -5,8 +5,8 @@
     <description>Canoe the RaiBlocks Wallet</description>
     <link>http://getcanoe.io/</link>
     <atom:link href="http://getcanoe.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 Jan 2018 16:26:35 -0500</pubDate>
-    <lastBuildDate>Mon, 08 Jan 2018 16:26:35 -0500</lastBuildDate>
+    <pubDate>Mon, 08 Jan 2018 17:38:18 -0500</pubDate>
+    <lastBuildDate>Mon, 08 Jan 2018 17:38:18 -0500</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -39,7 +39,7 @@
 
 &lt;p&gt;The security of the current model is based on people trusting us to not steal their money. Kinda like any exchange.&lt;/p&gt;
 
-&lt;p&gt;This is because the current architecture relies on the “wallet” parts of the RPC, which means Canoe is sending seed (when you import, or when you create the wallet initially) through HTTPS to our server. So if a hacker gets root access to our servers, they can do some serious damage.&lt;/p&gt;
+&lt;p&gt;This is because the current architecture relies on the “wallet” parts of the RPC, which means Canoe is sending the seed (when you import, or when you create the wallet initially) through HTTPS to our server. So if a hacker gets root access to our servers, they can do some serious damage.&lt;/p&gt;
 
 &lt;p&gt;We also haven’t yet implemented the password mechanism, and currently client side state (including seed) is stored in localstorage unencrypted.&lt;/p&gt;
 
@@ -50,7 +50,7 @@
 &lt;h1 id=&quot;contribute&quot;&gt;Contribute&lt;/h1&gt;
 &lt;p&gt;Thank you for being part of this project at such an early stage. If you’d like to contribute to Canoe, you can help us by reporting issues, fixing bugs, translating, or donating.&lt;/p&gt;
 
-&lt;p&gt;regards, the Canoe Team&lt;/p&gt;
+&lt;p&gt;Regards, the Canoe Team&lt;/p&gt;
 </description>
         <pubDate>Mon, 08 Jan 2018 05:00:00 -0500</pubDate>
         <link>http://getcanoe.io/2018/01/08/canoe-first-mobile-wallet-for-raiblocks.html</link>
@@ -69,17 +69,17 @@
     
       <item>
         <title>Canoe Is Born</title>
-        <description>&lt;p&gt;I started looking into crypto currencies in the beginning of december about one month ago. Buying some Bitcoin and learning the ropes. But I immediately started looking at the “mining free” coins, since IMHO it’s an obviously &lt;strong&gt;idiotic waste of energy&lt;/strong&gt; going on with the whole mining concept.&lt;/p&gt;
+        <description>&lt;p&gt;I started looking into crypto currencies at the beginning of December around one month ago. Buying some Bitcoin and learning the ropes. But I immediately started looking at the “mining free” coins, since IMHO it’s an obviously idiotic waste of energy going on with the whole mining concept.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-dags&quot;&gt;The DAGs&lt;/h2&gt;
-&lt;p&gt;Being so called “DAG coins” eliminating mining - &lt;strong&gt;RaiBlocks, IOTA and Byteball&lt;/strong&gt; caught my attention. Of these three RaiBlocks felt most interesting to me.&lt;/p&gt;
+&lt;p&gt;As so called “DAG coins” eliminate mining - RaiBlocks, IOTA and Byteball caught my attention. Of these three, RaiBlocks felt most interesting to me.&lt;/p&gt;
 
-&lt;p&gt;Byteball does have nice feature, and from the little I have read - a concept of privacy making it stand out. But RaiBlocks is straight forward in its focus (money - not a damn “computing platform”) and I would also argue the block lattice model feels very natural to me, so natural that I can’t understand why blockchains have been around all this time, and only RaiBlocks picked such a model.&lt;/p&gt;
+&lt;p&gt;Byteball does have some nice features, and from the little I have read, a concept of privacy making it stand out. But RaiBlocks is straight forward in its focus (money - not a damn “computing platform”) and I would also argue the block lattice model feels very natural to me; so natural that I can’t understand why blockchains have been around all this time, and only RaiBlocks picked such a model.&lt;/p&gt;
 
 &lt;h2 id=&quot;open-source&quot;&gt;Open Source&lt;/h2&gt;
 &lt;p&gt;I am a developer, quite experienced, and I wanted to get involved in the community somehow. I have taken part in many different open source projects during the years and that’s how I like to work.&lt;/p&gt;
 
-&lt;p&gt;Frankly… RaiBlocks has in my humble opinion a bit of &lt;strong&gt;learning to do&lt;/strong&gt; in this department. The core team is fairly silent and things are being developed “out of sight”. I understand that there are probably commercial reasons for some things being “cooked up” in the dark, but it does make the community “second class citizens”…&lt;/p&gt;
+&lt;p&gt;Frankly… RaiBlocks has in my humble opinion a bit of learning to do in this department. The core team is fairly silent and things are being developed “out of sight”. I understand that there are probably commercial reasons for some things being “cooked up” in the dark, but it does make the community “second class citizens”…&lt;/p&gt;
 
 &lt;p&gt;From what I can tell we have no real saying in what’s being done nor how the roadmap is supposed to look. Maybe I am missing something here though, perhaps I am just old-fashion, perhaps there are channels open that I should have known about?&lt;/p&gt;
 
@@ -89,28 +89,28 @@
 
 &lt;h2 id=&quot;wallets&quot;&gt;Wallets&lt;/h2&gt;
 
-&lt;p&gt;Obviously RaiBlocks is a bit lacking in this department. The native official wallet uses Qt, written in C++ and works, but… it’s definitely &lt;strong&gt;not a pillar of user friendliness&lt;/strong&gt; - and that’s perfectly fine - because core team has their focus on other parts. As long as it works, it serves the purpose. Of course, it should be slightly less confusing around the important parts (backup, seed etc).&lt;/p&gt;
+&lt;p&gt;Obviously RaiBlocks is a bit lacking in this department. The native official wallet uses Qt, written in C++ and works, but… it’s definitely not a pillar of user friendliness - and that’s perfectly fine - because core team has their focus on other parts. As long as it works, it serves the purpose. Of course, it should be slightly less confusing around the important parts (backup, seed etc).&lt;/p&gt;
 
 &lt;p&gt;The web based &lt;a href=&quot;http://raiwallet.com&quot;&gt;Raiwallet.com&lt;/a&gt; is good stuff. I don’t use it myself, but I have skimmed lots of the code. In fact, we plan to reuse large parts of it in Canoe for the beta!&lt;/p&gt;
 
-&lt;p&gt;Then there are some works in progress, but definitely a bit of a shortage here. So feeling that “hey, how hard can it be?” - I looked at Byteball, because people said they have a &lt;strong&gt;great wallet&lt;/strong&gt; and it turns out that it’s a derivation of &lt;a href=&quot;http://copay.io&quot;&gt;Copay&lt;/a&gt; from Bitpay. These wallets are built using web tech - in Cordova and nwjs. That means great portability including mobile. And it’s all MIT licensed.&lt;/p&gt;
+&lt;p&gt;Then there are some works in progress, but definitely a bit of a shortage here. So feeling that “hey, how hard can it be?” - I looked at Byteball, because people said they have a great wallet and it turns out that it’s a derivation of &lt;a href=&quot;http://copay.io&quot;&gt;Copay&lt;/a&gt; from Bitpay. These wallets are built using web tech - in Cordova and nwjs. That means great portability including mobile. And it’s all MIT licensed.&lt;/p&gt;
 
 &lt;h1 id=&quot;just-doing-it&quot;&gt;Just doing it&lt;/h1&gt;
-&lt;p&gt;One thing I have learned is that things get going when you actually start doing something instead of talking. So I just cloned out Byteball and started with it. That &lt;strong&gt;failed&lt;/strong&gt;, I couldn’t even run it! Not sure what it was, but after a few hours of frustration (probably something trivial) I cloned out Copay instead, going straight to the source.&lt;/p&gt;
+&lt;p&gt;One thing I have learned is that things get going when you actually start doing something instead of talking. So I just cloned out Byteball and started with it. That failed, I couldn’t even run it! Not sure what it was, but after a few hours of frustration (probably something trivial) I cloned out Copay instead, going straight to the source.&lt;/p&gt;
 
-&lt;p&gt;From that point in time I have been hacking on it like a mad man, and @Eunji and @rami have joined up helping me with design, UI fixing, testing, planning and website development. I called it &lt;strong&gt;RaiW&lt;/strong&gt; first, but @Eunji came up with &lt;strong&gt;the much better name Canoe&lt;/strong&gt; and the first incarnation of our logo - a canoe holding a rai stone.&lt;/p&gt;
+&lt;p&gt;From that point in time I have been hacking on it like a mad man, and @Eunji and @rami have joined up helping me with design, UI fixing, testing, planning and website development. I called it RaiW first, but @Eunji came up with the much better name Canoe and the first incarnation of our logo - a canoe holding a rai stone.&lt;/p&gt;
 
-&lt;p&gt;We have even gotten our first &lt;strong&gt;real donation&lt;/strong&gt;! No idea from whom, but thanks! We split it among all team members.&lt;/p&gt;
+&lt;p&gt;We have even gotten our first real donation! No idea from whom, but thanks! We split it among all team members.&lt;/p&gt;
 
 &lt;h1 id=&quot;the-canoe-project&quot;&gt;The Canoe Project&lt;/h1&gt;
 &lt;p&gt;We fired up a server, registered a domain, got a website in place and so on. And we are close to our first tech-preview &lt;a href=&quot;&quot;&gt;alpha release&lt;/a&gt;. That’s after just a few weeks of work, and Canoe is already full of working features.&lt;/p&gt;
 
-&lt;p&gt;We &lt;strong&gt;know&lt;/strong&gt; that the current backend model is not good from a security perspective, we will start replacing it as soon as alpha is out the door. But we want people to get a shot at playing with it!&lt;/p&gt;
+&lt;p&gt;We know that the current backend model is not good from a security perspective, we will start replacing it as soon as alpha is out the door. But we want people to get a shot at playing with it!&lt;/p&gt;
 
-&lt;p&gt;And we have over &lt;strong&gt;600 people signed up to try out the alpha&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;And we have over 600 people signed up to try out the alpha!&lt;/p&gt;
 
 &lt;h1 id=&quot;contribute&quot;&gt;Contribute&lt;/h1&gt;
-&lt;p&gt;We invite anyone to contribute to Canoe, you can help us by joining as developer, reporting issues, fixing bugs, translating, chatting encouraging words on discord - or donating.&lt;/p&gt;
+&lt;p&gt;We invite anyone to contribute to Canoe. You can help us by joining as developer, reporting issues, fixing bugs, translating, chatting encouraging words on discord - or donating.&lt;/p&gt;
 
 &lt;p&gt;This is true Open Source. Everyone can be a part. Everything done in the open. :)&lt;/p&gt;
 </description>
