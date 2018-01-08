@@ -44,3 +44,6 @@ Finally, we are doing server side PoW, so... if a LOT of people start using it -
 
 # Contribute
 Thank you for being part of this project at such an early stage. If you'd like to contribute to Canoe, you can help us by reporting issues, fixing bugs, translating, or donating.
+
+
+regards, the Canoe Team (gokr, Eunji, rami)
