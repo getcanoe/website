@@ -264,8 +264,6 @@ footer .container .content div:not(.clear) img { width: 40px; height: 40px; }
 }
 
 .download-button button:hover {
-	box-shadow: 2px 2px 2px rgba(0,0,0,.16);
-	box-shadow: 1px 1px 1px rgba(0,0,0,.26);
 	background: rgba(255,255,255,.2);
 }
 
@@ -327,4 +325,14 @@ footer .container .content div:not(.clear) img { width: 40px; height: 40px; }
 	.nav-links li {
 		font-size: 1.85em;
 	}
+}
+
+button.disable {
+	border: 1px solid rgba(255,255,255,.3);
+ 	cursor: default;
+ 	color: rgba(255,255,255,.3)
+}
+
+button.disable:hover {
+	background: rgba(255,255,255,.0);
 }
