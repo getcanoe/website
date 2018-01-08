@@ -99,6 +99,7 @@ pre {
 a {
 	color: #70C4B2;
 	font-weight: bold;
+	text-decoration: none;
 }
 
 /**
@@ -956,7 +957,7 @@ table tfoot td {
   padding-bottom: 15px;
   font-size: 16px;
   text-transform: uppercase;
-  color: #333030;
+  color: #263959;
   font-weight: 700;
 }
 
@@ -1004,7 +1005,7 @@ table tfoot td {
 
 .contact .contact-title {
   position: relative;
-  color: #333030;
+  color: #263959;
   font-weight: 400;
   font-size: 12px;
   margin: 0 0 5px;
@@ -1069,7 +1070,7 @@ table tfoot td {
 }
 
 .contact ul li a:hover {
-  color: #333030;
+  color: #263959;
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
@@ -1480,3 +1481,66 @@ a.newer-posts:hover {
 .about .author-name::after {
 	content: none;
 }
+
+.archive-group {
+	margin-top: 50px;
+}
+
+.tag-head {
+		text-decoration: none;
+    font-size: 10px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    color: #263959;
+    text-transform: uppercase;
+    border: 1px solid #263959;
+		width: fit-content;
+}
+
+.content-box .page-footer .page-tag a:hover,
+.tag-head:hover {
+	background-color: #263959;
+	color: white;
+	text-decoration: none;
+}
+
+.content-box a {
+    color: #70C4B2;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dotted #70c4b2;
+    padding-bottom: 2px;
+    font-weight: 900;
+		transtion: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
+}
+
+.content-box .page-footer span a:hover,
+.content-box a:hover {
+	color: #263959;
+	border-bottom: 1px dotted #263959;
+	transform: scale(1.2);
+}
+
+.content-box .page-footer a {
+	border-bottom: 1px solid #263959;
+}
+
+.content-box .page-footer .page-share a {
+	border: 1px solid #ecf0f1;
+}
+
+
+.content-box .page-footer span a {
+	border-bottom: 1px dotted #70c4b2;
+}
+
+
+.post-title a {
+	border-bottom: none;
+}
+
+.post-title a:hover {
+	border-bottom: none;
+}
+
+
