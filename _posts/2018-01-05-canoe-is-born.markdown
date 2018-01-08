@@ -8,12 +8,12 @@ author: gokr
 tags: [canoe, mobile] # add tag
 ---
 
-I started looking into crypto currencies in the beginning of december about one month ago. Buying some Bitcoin and learning the ropes. But I immediately started looking at the "mining free" coins, since IMHO it's an obviously **idiotic waste of energy** going on with the whole mining concept.
+I started looking into crypto currencies at the beginning of December around one month ago. Buying some Bitcoin and learning the ropes. But I immediately started looking at the "mining free" coins, since IMHO it's an obviously **idiotic waste of energy** going on with the whole mining concept.
 
 ## The DAGs
-Being so called "DAG coins" eliminating mining - **RaiBlocks, IOTA and Byteball** caught my attention. Of these three RaiBlocks felt most interesting to me.
+As so called “DAG coins” eliminate mining - **RaiBlocks, IOTA and Byteball** caught my attention. Of these three, RaiBlocks felt most interesting to me.
 
-Byteball does have nice feature, and from the little I have read - a concept of privacy making it stand out. But RaiBlocks is straight forward in its focus (money - not a damn "computing platform") and I would also argue the block lattice model feels very natural to me, so natural that I can't understand why blockchains have been around all this time, and only RaiBlocks picked such a model.
+Byteball does have some nice features, and from the little I have read, a concept of privacy making it stand out. But RaiBlocks is straight forward in its focus (money - not a damn "computing platform") and I would also argue the block lattice model feels very natural to me; so natural that I can't understand why blockchains have been around all this time, and only RaiBlocks picked such a model.
 
 ## Open Source
 I am a developer, quite experienced, and I wanted to get involved in the community somehow. I have taken part in many different open source projects during the years and that's how I like to work.
@@ -50,6 +50,6 @@ And we have over **600 people signed up to try out the alpha**!
 
 
 # Contribute
-We invite anyone to contribute to Canoe, you can help us by joining as developer, reporting issues, fixing bugs, translating, chatting encouraging words on discord - or donating.
+We invite anyone to contribute to Canoe. You can help us by joining as developer, reporting issues, fixing bugs, translating, chatting encouraging words on discord - or donating.
 
 This is true Open Source. Everyone can be a part. Everything done in the open. :)

@@ -35,7 +35,7 @@ But all of the above will of course soon be fixed.
 
 The security of the current model is based on people trusting us to not steal their money. Kinda like any exchange.
 
-This is because the current architecture relies on the "wallet" parts of the RPC, which means Canoe is sending seed (when you import, or when you create the wallet initially) through HTTPS to our server. So if a hacker gets root access to our servers, they can do some serious damage.
+This is because the current architecture relies on the "wallet" parts of the RPC, which means Canoe is sending the seed (when you import, or when you create the wallet initially) through HTTPS to our server. So if a hacker gets root access to our servers, they can do some serious damage.
 
 We also haven't yet implemented the password mechanism, and currently client side state (including seed) is stored in localstorage unencrypted.
 
@@ -46,4 +46,4 @@ Finally, we are doing server side PoW, so... if a LOT of people start using it -
 # Contribute
 Thank you for being part of this project at such an early stage. If you'd like to contribute to Canoe, you can help us by reporting issues, fixing bugs, translating, or donating.
 
-regards, the Canoe Team
+Regards, the Canoe Team
