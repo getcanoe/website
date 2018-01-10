@@ -8,7 +8,7 @@ author: gokr
 tags: [canoe, mobile, launch, alpha] # add tag
 ---
 
-Last night we decided to release the Alpha version of Canoe. We however opted not to send out emails to those who shown interest in the public alpha; we wanted to test it on a smaller crowd. The launch was announced to our small folowership on Twitter and on the Raiblocks Discord. This proved wise since Disaster Girl from our [alpha release blog post]({{ site.baseurl }}{% link _posts/2018-01-08-canoe-first-mobile-wallet-for-raiblocks.markdown %}) showed up.
+Last night we decided to release the Alpha version of Canoe. We however opted not to send out emails to those who shown interest in the public alpha; we wanted to test it on a smaller crowd. The launch was announced to our small folowership on Twitter and on the Raiblocks Discord. This proved wise since Disaster Girl from our [alpha release blog post](https://getcanoe.io/2018/01/08/canoe-first-mobile-wallet-for-raiblocks.html) showed up.
 
 <!--more-->
 

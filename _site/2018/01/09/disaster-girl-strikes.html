@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Disaster Girl Strikes - Canoe</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Canoe" property="og:site_name">
+  
+    <meta content="Disaster Girl Strikes" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Canoe the RaiBlocks Wallet" property="og:description">
+  
+  
+    <meta content="http://getcanoe.io/2018/01/09/disaster-girl-strikes.html" property="og:url">
+  
+  
+    <meta content="2018-01-09T18:25:00-05:00" property="article:published_time">
+    <meta content="http://getcanoe.io/about/" property="article:author">
+  
+  
+    <meta content="http://getcanoe.io/assets/img/alpha-rage.jpg" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="canoe" property="article:tag">
+    
+    <meta content="mobile" property="article:tag">
+    
+    <meta content="launch" property="article:tag">
+    
+    <meta content="alpha" property="article:tag">
+    
+  
+
+  
+    <meta name="twitter:card" content="">
+  
+    <meta name="twitter:site" content="@canoewallet">
+    <meta name="twitter:creator" content="@canoewallet">
+  
+    <meta name="twitter:title" content="Disaster Girl Strikes">
+  
+  
+    <meta name="twitter:url" content="http://getcanoe.io/2018/01/09/disaster-girl-strikes.html">
+  
+  
+    <meta name="twitter:description" content="Canoe the RaiBlocks Wallet">
+  
+  
+    <meta name="twitter:image:src" content="http://getcanoe.io/assets/img/alpha-rage.jpg">
+  
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/canoe-icon-negative.png" alt="Canoe Blog"></a>
+      </div>
+      <div class="author-name">Canoe Blog</div>
+      <p></p>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/contribute.html">Contribute</a></li>
+			<ul>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact us</h3>
+      <ul>
+				<li><a href="https://discord.gg/FJu9gNJ" target="_blank"><i class="fab fa-discord"></i></a></li>
+        
+          <li><a href="https://twitter.com/canoewallet" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/getcanoe" target="_blank"><i class="fab fa-github"></i></a></li>
+        
+        
+				<li class="email"><a href="mailto:hello@getcanoe.io"><i class="far fa-envelope-open"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2018 &copy; Canoe Blog</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <img class="page-image" src=/assets/img/alpha-rage.jpg alt="Disaster Girl Strikes">
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Disaster Girl Strikes</h1>
+        <div class="page-date"><span>2018, Jan 09&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p>Last night we decided to release the Alpha version of Canoe. We however opted not to send out emails to those who shown interest in the public alpha; we wanted to test it on a smaller crowd. The launch was announced to our small folowership on Twitter and on the Raiblocks Discord. This proved wise since Disaster Girl from our <a href="https://getcanoe.io/2018/01/08/canoe-first-mobile-wallet-for-raiblocks.html">alpha release blog post</a> showed up.</p>
+
+<!--more-->
+
+<h1 id="a-bug">A Bug</h1>
+<p>The alpha of Canoe worked quite nicely from a UI perspective, a few people got cracking with it, all was fine. At some point, a new user clicked through the onboarding suddenly failed hard. Despite that the two calls had worked perfectly fine for about 114 wallets. In fact, immediately after the “wallet create” call the <em>rai_node</em> decided that the wallet was locked. It then just threw it’s digital hands in the air and refused to talk to us anymore.</p>
+
+<p>Turns out I stumbled onto a bug in _rai/_node. rai_node this is core code, so I did not look deep into it. Colin proposed that it may be a race condition and that a pause between the first two calls might help - but nope. Another suggestion was that the latest master has some bug fixes preventing some bad conditions, nope, didn’t help either. Help arrived later with Luke Alonso, finding the root cause.</p>
+
+<h1 id="helicopter-down">Helicopter Down</h1>
+<p>After a flurry of attempts trying to get the _rai_node running again, I gave up. The server was down and none could run Canoe at this point. The team and I decided to:</p>
+
+<ul>
+  <li>Scan all wallets to see if anyone had any money in them</li>
+  <li>Reach out to wallet owners and try to figure out how to give them back their funds</li>
+  <li>Delete all empty wallets and see if it could be reserructed</li>
+</ul>
+
+<h1 id="luke-saves-the-day">Luke Saves The Day</h1>
+<p>Luke Alonso contacted me after I had explained our problems on the #development channel. He had been hacking in these parts earlier, and fixed another nasty issue causing corruption in a similar fashion. Luke took the db and debugged it all and found out that <strong>there is a limit of 128 wallets</strong> in _rai_node! Now, a limit would be fine - if _rai_node actually would return an error saying something like “limit reached.” What where is fun that? ;) The bug was simply that the code didn’t detect failure nor report it.</p>
+
+<p>Now I have patched our rai_node with a limit of 1000 wallets, and we are up and running again. If this stays up for a while we will soon send out our email to all those 600 that signed up for the alpha.</p>
+
+<h1 id="next-step">Next Step</h1>
+<p>We are already hacking on the newer architecture, which will not use any of these calls. Until then, play with the alpha but remember the warnings we have given about it. The beta will be a much more solid solution.</p>
+
+<p>Thank you for being part of this project at such an early stage. If you’d like to contribute to Canoe, you can help us by reporting issues, fixing bugs, translating, or donating.</p>
+
+<p>And once more… THANK YOU LUKE!</p>
+
+<p>Regards, the Canoe Team</p>
+
+<div style="margin: auto; width: 100%; padding: 10px">
+<img src="/assets/img/donate.png" style="display: block;margin-left: auto;margin-right: auto;" /><br />
+<div style="display:flex;align-items:center;justify-content:center;">
+<bold>xrb_1qckwc5o3obkrwbet4amnkya113xq77qpaknsmiq9hwq31tmd5bpyo7sepsw</bold>
+</div>
+</div>
+
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Disaster Girl Strikes&url=http://getcanoe.io/2018/01/09/disaster-girl-strikes.html" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://getcanoe.io/2018/01/09/disaster-girl-strikes.html" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://getcanoe.io/2018/01/09/disaster-girl-strikes.html" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#canoe" class="tag">&#35; canoe</a>
+          
+            <a href="/tags#mobile" class="tag">&#35; mobile</a>
+          
+            <a href="/tags#launch" class="tag">&#35; launch</a>
+          
+            <a href="/tags#alpha" class="tag">&#35; alpha</a>
+          
+        </div>
+	<!-- Look the author details up from the site config. -->
+	
+
+	<!-- Output author details if some exist. -->
+	
+	    <span>
+	        <!-- Personal Info. -->
+	        Written by <a href="http://goran.krampe.se" target="_blank">Göran Krampe</a>
+	    </span>
+	
+      </div>
+      <section class="comment-area">
+  <div class="comment-wrapper">
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
