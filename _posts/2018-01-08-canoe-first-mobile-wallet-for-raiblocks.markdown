@@ -12,7 +12,7 @@ Two weeks ago we started working on a new wallet for Raiblocks based on the popu
 
 Canoe supports **Android**, **iOS** (to be released, but you can build it yourself) and **Windows Phone** (also comes soon), in addition to **Windows, Mac OSX, and Linux desktops**.
 
-We are releasing Canoe early because we want to get it in the hands of the community as soon as possible in order to test the user experience and help us 'battle harden' it. That being said, Canoe comes with a solid list of features including an onboarding tour that creates the wallet, importing seeds, sending and receiving RaiBlocks (QRCode), creating multiple accounts, QR code scanning, an address book, fingerprint unlock, and much more.
+We are releasing Canoe early because we want to get it in the hands of the community as soon as possible in order to test the user experience and help us 'battle harden' it. That being said, Canoe comes with an onboarding tour that covers creating a wallet/importing seeds as well as a solid list of features including sending and receiving RaiBlocks (QRCode supported), creating multiple accounts, QR code scanning, an address book, fingerprint unlock, and much more.
 
 Finally, please be aware that Canoe is still in it's very early stages, so please use only accounts with small amounts for testing purposes.
 
@@ -25,7 +25,7 @@ Here is a non-exhaustive list of Canoe's current shortcomings:
 * URL handling is not yet done
 * The home tab with balances and pending is not updated automatically, pull down or switch between tabs to get it up to date.
 * Import wallet via file not implemented
-* Currency conversions not fully working, but a bit
+* Currency conversions not quite working fully
 * ...and a bunch more of course!
 
 But all of the above will of course soon be fixed.
@@ -37,7 +37,7 @@ The security of the current model is based on people trusting us to not steal th
 
 This is because the current architecture relies on the "wallet" parts of the RPC, which means Canoe is sending the seed (when you import, or when you create the wallet initially) through HTTPS to our server. So if a hacker gets root access to our servers, they can do some serious damage.
 
-We also haven't yet implemented the password mechanism, and currently client side state (including seed) is stored in localstorage unencrypted.
+We also haven't yet implemented the password mechanism, and currently the client side state (including seed) is stored in localstorage unencrypted.
 
 These are all **big fat security issues** that we plan to fix in the beta release by reusing the excellent raiwallet webclient side codebase which addresses most of these issues brilliantly!
 
