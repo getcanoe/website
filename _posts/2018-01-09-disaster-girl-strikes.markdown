@@ -3,7 +3,7 @@ layout: post
 title: Disaster Girl Strikes 
 date: 2018-01-09 23:25:00
 description: 
-img: alpha-rage.jpg 
+img: disaster-girl-meme.jpg  
 author: gokr 
 tags: [canoe, mobile, launch, alpha] # add tag
 ---
