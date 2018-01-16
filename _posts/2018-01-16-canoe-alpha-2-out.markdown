@@ -8,7 +8,7 @@ author: gokr
 tags: [canoe, mobile, launch, alpha] # add tag
 ---
 
-Today we decided to release the [Alpha 2](https://github.com/getcanoe/canoe/releases/tag/v0.2.0) version of Canoe! This time we also sent out our invitation email to the **605 people** who signed up on the early launch page. And yes, after sending that out - we have deleted those emails as promised. This release is a pure bug fix of the first Alpha.
+Today we decided to release the [Alpha 2](https://github.com/getcanoe/canoe/releases/tag/v.0.2.0) version of Canoe! This time we also sent out our invitation email to the **605 people** who signed up on the early launch page. And yes, after sending that out - we have deleted those emails as promised. This release is a pure bug fix of the first Alpha.
 
 <!--more-->
 
