@@ -3,7 +3,7 @@ layout: post
 title: Canoe Alpha 2 is Out 
 date: 2018-01-16 18:20:00
 description: 
-img: raiblockers-y-u-no-canoe.jpg  
+img: firefighters.jpg  
 author: gokr 
 tags: [canoe, mobile, launch, alpha] # add tag
 ---
