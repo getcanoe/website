@@ -1,7 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    autoprefixer-rails (6.3.7)
+      execjs
     colorator (0.1)
+    execjs (2.7.0)
     ffi (1.9.10)
     jekyll (3.1.2)
       colorator (~> 0.1)
@@ -12,6 +15,8 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-autoprefixer (1.0.1)
+      autoprefixer-rails (~> 6.3.6)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
@@ -41,6 +46,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   jekyll
+  jekyll-autoprefixer
   jekyll-paginate
   rack-jekyll
 

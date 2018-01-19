@@ -28,7 +28,8 @@ markdown: kramdown
 plugins_dir:
   - jekyll-sitemap
   - jemoji
-
+# plugins:
+# - jekyll-autoprefixer
 gems:
   - jekyll-paginate
 
@@ -39,3 +40,8 @@ paginate_path: "/blog/page:num"
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 
 excerpt_separator: <!--more-->
+
+# Sass settings
+sass:
+    sass_dir: _sass
+    style: :compressed

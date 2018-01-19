@@ -1,0 +1,14 @@
+---
+---
+// Import needed SASS files
+// Utils
+@import "utils/normalize";
+
+// Base 
+@import "base/variables";
+
+// Layout 
+@import "layout/navigation";
+
+// Components 
+@import "components/hero";
