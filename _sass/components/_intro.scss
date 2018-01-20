@@ -1,0 +1,21 @@
+.intro {
+  padding: 135px 0 125px;
+
+  &__row {
+    max-width: 780px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    @include fontSize(20px);
+
+    text-align: center;
+    color: $dark-grey;
+    line-height: 1.85;
+
+    + .intro__text {
+      padding-top: 15px;
+    }
+  }
+}

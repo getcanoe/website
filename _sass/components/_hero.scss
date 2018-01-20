@@ -1,4 +1,67 @@
 .hero {
-  height: 730px;
   background: linear-gradient(135deg, #524988 0%,#311c67 100%);
+  position: relative;
+  overflow: hidden;
+  height: 730px;
+  z-index: 1;
+
+  &:after {
+    content: url('../img/home/border-hero.svg');
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    z-index: 2;
+  }
+
+  &__row {
+    position: relative;
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .logo {
+    max-width: 240px;
+    margin-top: 150px;
+  }
+
+  .title {
+    margin: 40px 0 10px;
+    color: $white;
+    line-height: 1;
+  }
+
+  .slogan {
+    @include fontSize(22px);
+
+    white-space: pre-line;
+    font-weight: 300;
+    line-height: 1.5;
+    color: $white;
+  }
+
+  .download-title {
+    margin: 50px 0 20px;
+    color: $white;
+  }
+
+  .download-links {
+    @include fontSize(17px);
+
+    text-decoration: underline;
+    letter-spacing: 0.4px;
+    font-family: $lato;
+    margin: 40px 0 0;
+    font-weight: 300;
+    display: block;
+    color: $white;
+  }
+
+  .mockup {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+  }
 }

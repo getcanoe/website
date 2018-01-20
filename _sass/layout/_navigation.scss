@@ -1,3 +1,30 @@
 .navigation {
+  display: inline-block;
+  margin: 45px 0 0;
+  float: right;  
+
+  &__link {
+    @include fontSize(20px);
+    text-decoration: none;
+    letter-spacing: 0.4px;
+    font-family: $lato;
+    font-weight: 300;
+    color: $white;
+
+    + .navigation__link {
+      padding: 0 0 0 55px;
+    }
+
+    &.active {
+      font-weight: 600;
+    }
+  }
+
+  .button {
+    @include fontSize(17px);
     
+    margin: 0 0 0 55px;   
+    padding: 14px 30px;
+    font-weight: 600; 
+  }
 }

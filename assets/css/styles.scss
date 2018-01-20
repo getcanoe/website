@@ -6,9 +6,12 @@
 
 // Base 
 @import "base/variables";
+@import "base/mixins";
 
 // Layout 
 @import "layout/navigation";
+@import "layout/typography";
 
 // Components 
 @import "components/hero";
+@import "components/intro";
