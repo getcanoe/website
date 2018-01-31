@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Canoe development status 
+title: Canoe Beta Development Update 
 date: 2018-01-31 10:00:00
 description: 
 img: workshop.jpg  
