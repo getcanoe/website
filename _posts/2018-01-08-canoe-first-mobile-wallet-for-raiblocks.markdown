@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Canoe Wallet&#58; First Mobile Wallet for RaiBlocks 
+title: Canoe Wallet&#58; First Mobile Wallet for Nano 
 date: 2018-01-08 10:00:00
 description: 
 img: disaster-girl.jpg 
@@ -8,11 +8,11 @@ author: rami
 tags: [canoe, mobile, launch, alpha] # add tag
 ---
 
-Two weeks ago we started working on a new wallet for Raiblocks based on the popular Bitcoin wallet, [Copay](http://copay.io). Today, we are happy to bring you our first tech preview alpha release of Canoe!
+Two weeks ago we started working on a new wallet for [Nano](https://nano.org) (formerly known as RaiBlocks) based on the popular Bitcoin wallet, [Copay](http://copay.io). Today, we are happy to bring you our first tech preview alpha release of Canoe!
 
 Canoe supports **Android**, **iOS** (to be released, but you can build it yourself) and **Windows Phone** (also comes soon), in addition to **Windows, Mac OSX, and Linux desktops**.
 
-We are releasing Canoe early because we want to get it in the hands of the community as soon as possible in order to test the user experience and help us 'battle harden' it. That being said, Canoe comes with an onboarding tour that covers creating a wallet/importing seeds as well as a solid list of features including sending and receiving RaiBlocks (QRCode supported), creating multiple accounts, QR code scanning, an address book, fingerprint unlock, and much more.
+We are releasing Canoe early because we want to get it in the hands of the community as soon as possible in order to test the user experience and help us 'battle harden' it. That being said, Canoe comes with an onboarding tour that covers creating a wallet/importing seeds as well as a solid list of features including sending and receiving [Nano](https://nano.org) (QRCode supported), creating multiple accounts, QR code scanning, an address book, fingerprint unlock, and much more.
 
 Finally, please be aware that Canoe is still in it's very early stages, so please use only accounts with small amounts for testing purposes.
 

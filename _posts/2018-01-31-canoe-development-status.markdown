@@ -21,7 +21,7 @@ So in short, when you use the alpha, a wallet is created in the rai\_node runnin
 
 Alpha was released to get people trying it out, checking the UI and so on. Beta will be the real thing.
 
-The current dev branch, which will end up being the Beta, uses a whole different architecture. We looked at the available javascript codebase around RaiBlocks and decided to reuse code from Raiwallet.com, also in a big part [originally developed by Chris Cohoat for Nodejs](https://github.com/chriscohoat/rai-wallet). Raiwallet.com is as you know "blessed" by the official team so using that codebase also felt like a smart move.
+The current dev branch, which will end up being the Beta, uses a whole different architecture. We looked at the available javascript codebase around [Nano](https://nano.org) and decided to reuse code from [Nanowallet.io](https://nanowallet.io) (formerly Raiwallet.com), also in a big part [originally developed by Chris Cohoat for Nodejs](https://github.com/chriscohoat/rai-wallet). Raiwallet.com is as you know "blessed" by the official team so using that codebase also felt like a smart move.
 
 # Beta architecture
 In the beta we have only made very small changes to the actual wallet code. It's stored encrypted using AES256 in localstorage (just like on raiwallet.com) and you use a password of your own choice to decrypt and access the wallet on startup.

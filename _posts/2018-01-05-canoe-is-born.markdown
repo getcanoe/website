@@ -11,14 +11,14 @@ tags: [canoe, mobile] # add tag
 I started looking into crypto currencies at the beginning of December, around one month ago. Buying some Bitcoin and learning the ropes. But I immediately started looking at the "mining free" coins, since IMHO there's an obviously idiotic waste of energy going on with the whole mining concept.
 
 ## The DAGs
-As so called “DAG coins” eliminate mining - RaiBlocks, IOTA and Byteball caught my attention. Of these three, RaiBlocks felt most interesting to me.
+As so called “DAG coins” eliminate mining - [Nano](https://nano.org) (formerly known as RaiBlocks), IOTA and Byteball caught my attention. Of these three, Nano felt most interesting to me.
 
-Byteball does have some nice features, and from the little I have read, a concept of privacy making it stand out. But RaiBlocks is straight forward in its focus (money - not a damn "computing platform") and I would also argue the block lattice model feels very natural to me; so natural that I can't understand why blockchains have been around all this time, and why only RaiBlocks picked such a model.
+Byteball does have some nice features, and from the little I have read, a concept of privacy making it stand out. But Nano is straight forward in its focus (money - not a damn "computing platform") and I would also argue the block lattice model feels very natural to me; so natural that I can't understand why blockchains have been around all this time, and why only Nano picked such a model.
 
 ## Open Source
 I am a quite experienced developer, and I wanted to get involved in the community somehow. I have taken part in many different open source projects during the years and that's how I like to work.
 
-Frankly... RaiBlocks has in my humble opinion a bit of learning to do in this department. The core team is fairly silent and things are being developed "out of sight". I understand that there are probably commercial reasons for some things being "cooked up" in the dark, but it does make the community "second class citizens"...
+Frankly... [Nano](https://nano.org) has in my humble opinion a bit of learning to do in this department. The core team is fairly silent and things are being developed "out of sight". I understand that there are probably commercial reasons for some things being "cooked up" in the dark, but it does make the community "second class citizens"...
 
 From what I can tell, we have no real saying in what's being done nor how the roadmap is supposed to look. Maybe I am missing something here though, perhaps I am just old-fashion, or perhaps there are channels open that I should have known about?
 
@@ -28,9 +28,9 @@ But I would expect a bit more inclusiveness, if it's supposed to be a real open 
 
 ## Wallets
 
-Obviously RaiBlocks is a bit lacking in this department. The native official wallet uses Qt, written in C++ and works, but... it's definitely not a pillar of user friendliness - and that's perfectly fine - because core team has their focus on other parts. As long as it works, it serves the purpose. Of course, it should be slightly less confusing around the important parts (backup, seed etc).
+Obviously Nano is a bit lacking in this department. The native official wallet uses Qt, written in C++ and works, but... it's definitely not a pillar of user friendliness - and that's perfectly fine - because core team has their focus on other parts. As long as it works, it serves the purpose. Of course, it should be slightly less confusing around the important parts (backup, seed etc).
 
-The web based [Raiwallet.com](http://raiwallet.com) is good stuff. I don't use it myself, but I have skimmed lots of the code. In fact, we plan to reuse large parts of it in Canoe for the beta!
+The web based [Nanowallet.io](https://nanowallet.io) is good stuff. I don't use it myself, but I have skimmed lots of the code. In fact, we plan to reuse large parts of it in Canoe for the beta!
 
 Then there are some works in progress, but they're definitely a bit of a shortage here. So with a feeling of "hey, how hard can it be?" - I looked at Byteball because people said they have a great wallet, and it turns out that it's a derivation of [Copay](http://copay.io) from Bitpay. These wallets are built using web tech - in Cordova and nwjs. That means great portability including mobile, and it's all MIT licensed.
 
