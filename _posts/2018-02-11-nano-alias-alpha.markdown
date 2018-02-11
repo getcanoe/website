@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Nano Aliases
-date: 2018-02-11 11:00:00
+date: 2018-02-11 16:00:00
 description:
 img: alias.png  
 author: stormtv
-tags: [canoe, alias, alpha] # add tag
+tags: [canoe, alias, beta] # add tag
 ---
 
 This article explains our current proposal on how the nano aliases system will work in the upcoming alias alpha. If you have insights and feedback to give, don't hesitate to pop in on discord and let us know! Note that after alias alpha has been used for a while we can revisit these details before we try to reach a production version of nano alias.
