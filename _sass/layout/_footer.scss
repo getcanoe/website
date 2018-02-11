@@ -1,0 +1,13 @@
+.footer {
+  background-color: #1B074E;
+  padding: 45px 20px 100px;
+
+  &__row {
+    max-width: 1025px;
+    margin: 0 auto;
+  }
+
+  .copyright {
+    color: $white;
+  }
+}

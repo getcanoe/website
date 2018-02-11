@@ -3,15 +3,17 @@
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# game: http://ogp.me/ns/game#">
     <title>Canoe | Take Care of Your RaiBlocks</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Canoe: Take Care of Your RaiBlocks" />
+    <meta name="title" content="Canoe: Take care of your Nano" />
     <!--      <link rel="canoe favicon" type="image/ico" href="favicon.ico">a-->
     <meta name="description" content="Manage your RaiBlocks accounts and transactions simply and easily." />
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta content='1505148443051764' property='fb:app_id'>
     <meta content='Canoe' property='og:site_name'>
+
+    <meta name="theme-color" content="#311c67">
     
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Muli:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Muli:600,700" rel="stylesheet">
 
     <meta content='website' property='og:type'>
     <meta property="og:url" content="http://www.getcanoe.io" />
@@ -19,7 +21,7 @@
     <meta property="og:description" content="Manage your RaiBlocks accounts and transactions simply and easily." />
     <meta property="og:image" content="http://www.getcanoe.io/canoe-image.jpg" />
 
-    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link href="assets/css/styles.css?v=1.0" rel="stylesheet" />
    
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/js/libs/jquery.browser.min.js" type="text/javascript"></script>
@@ -30,24 +32,23 @@
     <script src="/js/libs/tooltipster/jquery.tooltipster.min.js" type="text/javascript"></script>
   </head>
   <body>
+    <nav class="navigation">
+      <a href="" class="navigation__link active">Home</a>
+      <a href="" class="navigation__link">Blog</a>
+      <a href="" class="navigation__link">Contribute</a>
+      <a href="" class="button">Download now</a>
+    </nav>
+
     <section class="hero">
       <div class="hero__row">
-        <nav class="navigation">
-          <a href="" class="navigation__link active">Home</a>
-          <a href="" class="navigation__link">Blog</a>
-          <a href="" class="navigation__link">Contribute</a>
-          <a href="" class="button">Download now</a>
-        </nav>
-
         <img src="assets/img/canoe-logo.svg" alt="Canoe" class="logo">
-        <h1 class="title">Take care of your RaiBlocks</h1>
-        <p class="slogan">Manage your RaiBlocks accounts and transactions
+        <h1 class="title">Take care of your Nano</h1>
+        <p class="slogan">Manage your Nano accounts and transactions
           simply and easily.</p>
-
         <h3 class="download-title">Get Canoe now</h3>
-        <span class="button"><span class="icon-windows button__icon"></span>Windows</span>
-        <a href="downloads.html" class="download-links">View all downloads</a>
-
+        <a href="downloads.html" class="button button--disabled"><span class="icon-windows button__icon"></span>Windows</a>
+        <!-- <a href="downloads.html" class="download-links">View all downloads</a> -->
+        <p class="download-disabled">Beta release coming february 2018.</p>
         <img src="assets/img/home/hero-mockup.png" alt="" class="mockup">
       </div>
     </section>
@@ -60,7 +61,90 @@
       </div>
     </section>
 
-    <footer>
+    <!-- Wallet explanation  -->
+    <section class="wallet">
+      <h2>How Canoe works</h2>
+      <div class="phone">
+        <img src="assets/img/home/iphone-frame.svg" alt="" class="phone__frame">
+        <img src="assets/img/home/screens/screen-1.jpg" alt="" class="phone__screen" id="phone-screen">
+      </div>
+      <ul class="feature-list">
+        <li class="feature-list__feature active" data-id="1">
+          <h4 class="feature-list__feature__title">Canoe is secure</h4> 
+          <p class="feature-list__feature__text">Forget long waiting transaction times when transferring your crypto. RaiBlocks is instant! 
+            Try it, we dare you.</p>
+        </li>
+        <li class="feature-list__feature" data-id="2">
+          <h4 class="feature-list__feature__title">Canoe is open-source</h4> 
+          <p class="feature-list__feature__text">Forget long waiting transaction times when transferring your crypto. RaiBlocks is instant! 
+              Try it, we dare you.</p>
+        </li>
+        <li class="feature-list__feature" data-id="3">
+          <h4 class="feature-list__feature__title">Canoe is cross-platform</h4> 
+          <p class="feature-list__feature__text">Forget long waiting transaction times when transferring your crypto. RaiBlocks is instant! 
+              Try it, we dare you.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Team -->
+    <section class="team">
+      <div class="team__row">
+        <h2>Meet the team</h2>
+        <!-- Rami -->
+        <figure class="team__member">
+          <img src="assets/img/home/team-rami.jpg" alt="" class="team__member__image">
+          <figcaption> 
+            <h5 class="team__member__name">Rami Taibah<h5>
+            <h6 class="team__member__job">UX designer/developer<h6>
+          </figcaption> 
+          <ul class="team__member__icons">
+            <li class="team__member__icons__link"><a href="http://rtaibah.com/" target="_blank"><span class="icon-url"></span></a></li>
+            <li class="team__member__icons__link"><a href="https://twitter.com/rtaibah" target="_blank"><span class="icon-twitter"></span></a></li>
+          </ul>
+        </figure>
+        <!-- Göran  -->
+        <figure class="team__member">
+          <img src="assets/img/home/team-goran.jpg" alt="" class="team__member__image">
+          <figcaption> 
+            <h5 class="team__member__name">Göran Krampe<h5>
+            <h6 class="team__member__job">Developer<h6>
+            <ul class="team__member__icons">
+              <li class="team__member__icons__link"><a href="http://krampe.se/" target="_blank"><span class="icon-url"></span></a></li>
+              <li class="team__member__icons__link"><a href="https://github.com/gokr" target="_blank"><span class="icon-linkedin"></span></a></li>
+              <li class="team__member__icons__link"><a href="https://www.linkedin.com/in/gorankrampe/" target="_blank"><span class="icon-github"></span></a></li>
+              <li class="team__member__icons__link"><a href="https://twitter.com/gorankrampe" target="_blank"><span class="icon-twitter"></span></a></li>
+            </ul>
+          </figcaption> 
+        </figure>
+        <!-- Mike -->
+        <figure class="team__member">
+          <img src="assets/img/home/team-mike.jpg" alt="" class="team__member__image">
+          <figcaption> 
+            <h5 class="team__member__name">Mike Tasset<h5>
+            <h6 class="team__member__job">UI/UX designer<h6>
+          </figcaption> 
+          <ul class="team__member__icons">
+            <li class="team__member__icons__link"><a href="https://miketasset.com/" target="_blank"><span class="icon-url"></span></a></li>
+            <li class="team__member__icons__link"><a href="https://www.linkedin.com/in/miketasset/" target="_blank"><span class="icon-linkedin"></span></a></li>
+          </ul>
+        </figure>
+        <!-- Eunji -->
+        <!-- <figure class="team__member">
+          <img src="assets/img/home/team-eunji.jpg" alt="" class="team__member__image">
+          <figcaption> 
+            <h5 class="team__member__name">Noname yet<h5>
+            <h6 class="team__member__job">UI/UX designer<h6>
+            </figcaption> 
+        </figure> -->
+        <div class="clear"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__row">
+        <p class="copyright">© Copyright - 2018 Canoe</p>
+      </div>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112004728-1"></script>
       <script>

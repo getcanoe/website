@@ -1,0 +1,84 @@
+.team {
+  padding: 75px 0;
+  @media #{$desktop} {
+    padding: 135px 0;
+  }
+
+  &__row {
+    max-width: 1045px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    color: $dark-grey;
+    text-align: center;
+    margin: 0 0 40px 0;
+    @media #{$desktop} {
+      margin: 0 0 50px 0;
+    }
+  }
+  
+  &__member {
+    max-width: 200px;
+    margin: 0 auto;
+    @media #{$desktop} {
+      margin: 0 30px;
+      float: left;
+    }
+
+    &__image {
+      border-radius: 100%;
+      max-width: 200px;
+    }
+
+    &__name {
+      text-align: center;
+      color: $dark-grey;
+      margin: 18px 0 10px;
+    }
+
+    &__job {
+      @include fontSize(16px);
+
+      text-align: center;
+      color: $dark-grey;
+      font-family: $lato;
+    }
+
+    &__icons {
+      text-align: center;
+      list-style: none;
+      margin: 20px 0 0;
+      padding: 0;
+
+      &__link {
+        display: inline-block;
+        color: $dark-grey;
+        font-size: 20px;
+        padding: 0 5px;
+
+        a {
+          transition: color 0.2s linear;
+          text-decoration: none;
+          color: $dark-grey;
+
+          &:visited {
+            color: $dark-grey;
+          }
+
+          &:hover {
+            color: #727680;
+          }
+        }
+      }
+    }
+
+    + .team__member {
+      margin-top: 40px;
+    }
+  }
+}
+
+.clear {
+  clear: both;
+}

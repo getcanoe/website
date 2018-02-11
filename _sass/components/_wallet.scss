@@ -1,0 +1,73 @@
+.wallet {
+  background-color: #f5f4f7;
+  padding: 75px 0;
+  @media #{$desktop} {
+    padding: 135px 0;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .phone {
+    position: relative;
+    display: block;
+    margin: 40px auto 0 ;
+    width: 55%;
+
+    &__frame {
+      width: 100%;
+    }
+
+    &__screen {
+      border: 1px solid $dark-grey;
+      position: absolute;
+      width: 87%;
+      top: 12%;
+      left: 6%;
+    }
+  }
+
+  .feature-list {
+    margin: 30px 20px 0;
+
+    &__feature {
+      transition: all 0.4s ease-out;
+      box-shadow: 0 3px 10px 0 rgba(0,0,0,0.10);
+      background-color: $white;
+      padding: 20px;
+      max-height: 20px;
+      overflow: hidden;
+
+      &__title {
+        transition: all 0.2s linear;
+      }
+
+      &__text {
+        transition: opacity 0.2s linear;
+        padding-top: 10px;
+        line-height: 1.35;
+        opacity: 0;
+      }
+
+      + .feature-list__feature {
+        margin-top: 10px;
+      }
+
+      &.active {
+        transition: all 0.4s ease-in 0.2s;
+        max-height: 600px;
+
+        .feature-list__feature__title {
+          transition: opacity 0.2s linear 0.2s;
+          color: $green;
+        } 
+
+        .feature-list__feature__text {
+          transition: opacity 0.2s linear 0.2s;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

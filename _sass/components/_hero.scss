@@ -1,50 +1,80 @@
 .hero {
   background: linear-gradient(135deg, #524988 0%,#311c67 100%);
   position: relative;
+  text-align: center;
   overflow: hidden;
-  height: 730px;
+  padding: 0 0 80px;
   z-index: 1;
+  @media #{$desktop} {
+    text-align: left;
+    height: 730px;
+  }
 
   &:after {
-    content: url('../img/home/border-hero.svg');
+    content: url('../img/home/border-hero-mobile.svg');
+    width: calc(100% + 20px);
     position: absolute;
-    bottom: -5px;
-    left: -5px;
-    width: calc(100% + 10px);
+    bottom: -4px;
+    left: -10px;
     z-index: 2;
+    @media #{$desktop} {
+      content: url('../img/home/border-hero.svg');
+    }
   }
 
   &__row {
     position: relative;
-    max-width: 1000px;
-    padding: 0 20px;
+    padding: 0 25px;
     margin: 0 auto;
     height: 100%;
+    @media #{$desktop} {
+      max-width: 1000px;
+      padding: 0 20px;
+    }
   }
 
   .logo {
-    max-width: 240px;
-    margin-top: 150px;
+    margin: 50px auto 0;
+    max-width: 180px;
+    display: block;
+    @media #{$desktop} {
+      max-width: 240px;
+      margin-top: 150px;
+    }
   }
 
   .title {
     margin: 40px 0 10px;
     color: $white;
     line-height: 1;
+    text-align: left;
+    @media #{$desktop} {
+      margin: 40px 0 10px;
+    }
   }
 
   .slogan {
-    @include fontSize(22px);
+    @include fontSize(18px);
 
-    white-space: pre-line;
-    font-weight: 300;
+    text-align: left;
+    font-weight: 400;
     line-height: 1.5;
+    padding: 5px 0 0;
     color: $white;
+    opacity: 0.75;
+    @media #{$desktop} {
+      @include fontSize(22px);
+      white-space: pre-line;
+    }
   }
 
-  .download-title {
-    margin: 50px 0 20px;
+  .download-title {  
+    margin: 40px 0 20px;
     color: $white;
+    font-weight: 600;
+    @media #{$desktop} {
+      margin: 50px 0 20px;
+    }
   }
 
   .download-links {
@@ -53,15 +83,36 @@
     text-decoration: underline;
     letter-spacing: 0.4px;
     font-family: $lato;
-    margin: 40px 0 0;
+    margin: 20px 0 0;
     font-weight: 300;
     display: block;
     color: $white;
+    @media #{$desktop} {
+      margin: 40px 0 0;
+    }
+  }
+
+  .download-disabled {
+    @include fontSize(17px);
+
+    letter-spacing: 0.4px;
+    font-family: $lato;
+    margin: 20px 0 0;
+    font-weight: 400;
+    display: block;
+    color: $white;
+    @media #{$desktop} {
+      margin: 40px 0 0;
+    }
   }
 
   .mockup {
-    position: absolute;
-    bottom: -40px;
-    right: 0;
+    // position: absolute;
+    // bottom: -40px;
+    // right: 0;
+    display: none;
+    width: 80%;
+    @media #{$desktop} {
+    }
   }
 }
