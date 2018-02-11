@@ -5,7 +5,7 @@ date: 2018-02-09 20:00:00
 description: 
 img: off.png  
 author: gokr
-tags: [canoe, mobile, alpha. beta] # add tag
+tags: [canoe, mobile, alpha, beta] # add tag
 ---
 
 Now it's the 9th february and we have reached the **shutdown of the Alpha**.
