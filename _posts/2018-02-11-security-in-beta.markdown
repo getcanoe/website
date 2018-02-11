@@ -55,29 +55,28 @@ Securing the Canoe wallet from access by someone other than you consists of:
 * Canoe's logic for doing sends and viewing accounts.
 
 Canoe has the following three unlock options:
+
 1. Password entry (all platforms)
 2. Fingerprint scanning (Android)
-3. PIN code (all platforms)
+3. 4-digit PIN code (all platforms)
 
 Our proposal is to control behavior using the following settings:
 
-* When app goes to background (only on mobile), choose lock mechanism (none, fingerprint, PIN, password).
-* When timeout A is reached (in background or not), choose lock mechanism (none, fingerprint or PIN).
+* When app goes to background (only on mobile), choose lock mechanism (none, fingerprint, 4-digit PIN, password).
+* When timeout A is reached (in background or not), choose lock mechanism (none, fingerprint or 4-digit PIN).
 * When timeout B is reached Canoe will purge wallet from RAM and lock by password. This is like restarting Canoe.
 
-Example:
+Examples:
 
-Joe hates security and does not want to be bothered with locking. He chose "none" for lock when going to background and when reaching A. And he sets B to max value, 86400. This essentially never locks Canoe, until after 24 hours of inactivity.
+_Joe hates security and does not want to be bothered with locking. He chose "none" for lock when going to background and when reaching A. And he sets B to max value, 86400. This essentially never locks Canoe, until after 24 hours of inactivity._
 
-Jane is paranoid and uses password lock when Canoe goes to background. She chose "none" for lock when reaching A, but she sets B to 60 seconds which will lock Canoe with password after 1 minute of inactivity.
+_Jane is paranoid and uses password lock when Canoe goes to background. She chose "none" for lock when reaching A, but she sets B to 60 seconds which will lock Canoe with password after 1 minute of inactivity._
 
 A proposed default setting could be:
 
-* Fingerprint lock when going to background on Android. On other platforms, PIN.
+* Fingerprint lock when going to background on Android. On other platforms, 4-digit PIN code.
 * Timeout A of 1 minute, same lock as above.
 * Timeout B of 30 minutes.
-
-
 
 # Logic constraints
 
@@ -86,10 +85,12 @@ There is also some application logic deciding when the password unlock is requir
 * Max amount to send in a single send (set in user choice of currency), without requiring password
 * Max amount to send during x hours (set in user choice of currency), without requiring password
 
+The default settings would be dynamically adjusted by Canoe team so that they typically follow reasonable values in dollar.
+
 In addition to this certain areas of the application always require unlock by password when entering them:
 
-* The security preferences page
-* The advanced settings page
+* The Security Preferences page
+* The Advanced settings page
 
 # Canoe vs Nanowallet
 As I have explained Canoe uses basically the same base code for the actual wallet. Canoe has made some tweaks, we for example have a metadata object attached to each account inside the wallet - so that we can store attributes of each account, for example the color of the account in the UI, or the new alias field.
