@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Canoe Beta is Coming
-date: 2018-02-15 21:00:00
+date: 2018-02-15 15:00:00
 description: 
 img: brace-yourselves.jpg  
 author: gokr
