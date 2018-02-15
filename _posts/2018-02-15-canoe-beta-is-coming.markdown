@@ -1,21 +1,21 @@
 ---
 layout: post
 title: Canoe Beta is Coming
-date: 2018-02-15 15:00:00
+date: 2018-02-15 10:00:00
 description: 
 img: brace-yourselves.jpg  
 author: gokr
 tags: [canoe, mobile, beta] # add tag
 ---
 
-Trying to bring some good news to the Nano community, we from the Canoe team would like to give an update on where we are on the development of [Canoe](https://getcanoe.io), the cross platform (Windows, Linux, OSX, iOS, Android) fully open source Nano wallet.
+We from the Canoe team would like to give an update on where we are on the development of [Canoe](https://getcanoe.io), the cross platform (Windows, Linux, OSX, iOS, Android) fully open source Nano wallet.
 
 <!--more-->
 
 # The Project
 First of all, Canoe is Open Source, both in license (MIT) but perhaps more importantly, in spirit. Anyone can join and help, we build it together. All discussions around where development is going is public on our discord and we are currently **5 in the official team** (Göran, Rami, Josh, Mike and Tyler) and perhaps 5-10 more actively helping with testing, ideas and so on. Joining in is just a matter of **doing the walk and not just the talk**. :)
 
-Canoe is not a core project, but we are in contact with the core Nano developers and we try to sync all important aspects around Canoe and wallets in general that we think really ought to be agreed upon. This can be things like security, but also interoperability decisions or just sharing knowledge in general.
+Canoe is not a core project, but we are actively working with the core team who have been very helpful and supportive of Canoe.
 
 # The Journey
 We first made an alpha version of Canoe, but I happily admit that was "the wrong track". I made the mistake that the RPC for the official node was useful for **actually making a wallet**, but the main purpose of the wallet parts in the RPC is for exchanges and the likes, not for personal wallets, since they per definition creates a need for trusting the server.
@@ -37,7 +37,7 @@ The backend for Canoe is also fully open source and we are hosting the current s
 
 For the beta which we hope to release before end of february, we are still working mainly on the following things:
 
-* Security mechanisms around session timeout and locking methods including PIN, fingerprint (Android) etc. Was described [in another post](https://getcanoe.io/2018/02/11/security-in-beta.html)
+* Security mechanisms around session timeout and locking methods including PIN, fingerprint (Android) etc, described in detail [in another post](https://getcanoe.io/2018/02/11/security-in-beta.html)
 * The detail view over the actual block chain per account, in other words, the transaction history.
 * Packaging for iOS and signing, checksums etc in general for all platforms.
 * Support for account aliases via Tyler Storm's [alias server](https://getcanoe.io/2018/02/11/nano-alias-alpha.html), both creation of your own and lookups of other's.
