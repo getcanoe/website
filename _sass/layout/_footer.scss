@@ -1,13 +1,21 @@
 .footer {
   background-color: #1B074E;
   padding: 45px 20px 100px;
+  @media #{$desktop} {
+    padding: 70px 20px;
+  }
 
   &__row {
-    max-width: 1025px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
   .copyright {
+    font-weight: 300;
     color: $white;
+    text-align: left;
+    display: block;
+    padding: 0;
+    margin: 0;
   }
 }

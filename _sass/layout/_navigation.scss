@@ -1,16 +1,27 @@
 .navigation {
   box-shadow: 0 -3px 10px 0 rgba(0,0,0,0.10);
   background-color: $white;
+  text-align: center;
   position: fixed;
+  padding: 20px 0;
   z-index: 1000;
   width: 100%;
   bottom: 0;
-  padding: 20px 0;
-  text-align: center;
   @media #{$desktop} {
-    display: inline-block;
-    margin: 45px 0 0;
-    float: right;  
+    background-color: rgba(0,0,0,0);
+    text-align: right;
+    padding: 50px 0;
+    bottom: auto;
+    position: absolute;
+    top: 0;
+  }
+
+  &__row {
+    @media #{$desktop} {
+      max-width: 1000px;
+      padding: 0 20px; 
+      margin: 0 auto;
+    } 
   }
 
   &__link {
@@ -23,14 +34,20 @@
     color: $dark-grey;
     padding: 0 20px;
     @media #{$desktop} {
-      @include fontSize(20px);
+      transition: 0.2s linear;
+      @include fontSize(17px);
       color: $white;
+      padding: 0;
+
+      &:hover {
+        color: $blue;
+      }
     }
 
     + .navigation__link {
       // padding: 0 0 0 40px;
       @media #{$desktop} {
-        padding: 0 0 0 55px;
+        padding: 0 0 0 50px;
       }
     }
 

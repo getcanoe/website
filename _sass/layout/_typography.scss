@@ -14,6 +14,7 @@ h2 {
 
   font-family: $muli;  
   font-weight: 700;
+  color: $dark-grey;
   @media #{$desktop} {
     @include fontSize(30px);
   }
@@ -25,7 +26,7 @@ h3 {
   font-family: $muli;  
   font-weight: 700;
   @media #{$desktop} {
-    @include fontSize(26px);
+    @include fontSize(24px);
   }
 }
 
@@ -34,6 +35,7 @@ h4 {
 
   font-family: $muli;  
   font-weight: 700;
+  color: $dark-grey;
   @media #{$desktop} {
 
   }
@@ -48,6 +50,7 @@ h5 {
 
 p {
   font-family: $lato;
+  color: #363B49;
 }
 
 .button {

@@ -32,17 +32,25 @@
     }
 
     &__name {
+      @include fontSize(20px);
       text-align: center;
       color: $dark-grey;
       margin: 18px 0 10px;
+      @media #{$desktop} {
+      }
     }
 
     &__job {
-      @include fontSize(16px);
+      @include fontSize(17px);
 
       text-align: center;
       color: $dark-grey;
       font-family: $lato;
+      padding: 2px 0 0 0;
+      @media #{$desktop} {
+        @include fontSize(16px);
+        padding: 0;
+      }
     }
 
     &__icons {
@@ -54,8 +62,12 @@
       &__link {
         display: inline-block;
         color: $dark-grey;
-        font-size: 20px;
-        padding: 0 5px;
+        font-size: 24px;
+        padding: 0 6px;
+        @media #{$desktop} {
+          font-size: 20px;
+          padding: 0 6px;
+        }
 
         a {
           transition: color 0.2s linear;
@@ -67,7 +79,7 @@
           }
 
           &:hover {
-            color: #727680;
+            color: $blue;
           }
         }
       }
@@ -75,6 +87,9 @@
 
     + .team__member {
       margin-top: 40px;
+      @media #{$desktop} {
+        margin-top: 0;
+      }
     }
   }
 }

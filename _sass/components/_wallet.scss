@@ -2,18 +2,45 @@
   background-color: #f5f4f7;
   padding: 75px 0;
   @media #{$desktop} {
-    padding: 135px 0;
+    padding: 120px 0;
+  }
+
+  &__row {
+    width: 100%;
+    @media #{$desktop} {
+      align-items: center;
+      max-width: 1000px;
+      padding: 0 20px;
+      margin: 0 auto;
+      display: flex;
+    }
   }
 
   h2 {
     text-align: center;
+    @media #{$desktop} {
+      padding: 0 0 40px;
+    }
   }
 
   .phone {
+    margin: 40px auto 0;
     position: relative;
     display: block;
-    margin: 40px auto 0 ;
     width: 55%;
+    @media #{$desktop} {
+      max-width: 280px;
+      width: 100%;
+      margin: 0;
+    }
+
+    &__wrapper {
+      @media #{$desktop} {
+        width: calc(50% - 15px);
+        float: left;
+        margin: 0;
+      }
+    }
 
     &__frame {
       width: 100%;
@@ -30,14 +57,25 @@
 
   .feature-list {
     margin: 30px 20px 0;
+    @media #{$desktop} {
+      width: calc(50% - 15px);
+      margin: 0;
+      float: left;
+    }
 
     &__feature {
       transition: all 0.4s ease-out;
-      box-shadow: 0 3px 10px 0 rgba(0,0,0,0.10);
+      box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
       background-color: $white;
       padding: 20px;
       max-height: 20px;
       overflow: hidden;
+      @media #{$desktop} {
+        cursor: pointer;
+        max-height: 400px;
+        padding: 40px;
+        width: 100%;
+      }
 
       &__title {
         transition: all 0.2s linear;
@@ -48,15 +86,22 @@
         padding-top: 10px;
         line-height: 1.35;
         opacity: 0;
+        @media #{$desktop} {
+          padding-top: 15px;
+          opacity: 1;
+        }
       }
 
       + .feature-list__feature {
         margin-top: 10px;
+        @media #{$desktop} {
+          margin-top: 16px;
+        }
       }
 
       &.active {
         transition: all 0.4s ease-in 0.2s;
-        max-height: 600px;
+        max-height: 300px;
 
         .feature-list__feature__title {
           transition: opacity 0.2s linear 0.2s;

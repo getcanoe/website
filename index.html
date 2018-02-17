@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# game: http://ogp.me/ns/game#">
-    <title>Canoe | Take Care of Your RaiBlocks</title>
+    <title>Canoe | Take care of your Nano</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Canoe: Take care of your Nano" />
     <!--      <link rel="canoe favicon" type="image/ico" href="favicon.ico">a-->
-    <meta name="description" content="Manage your RaiBlocks accounts and transactions simply and easily." />
+    <meta name="description" content="Manage your Nano accounts and transactions simply and easily." />
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta content='1505148443051764' property='fb:app_id'>
@@ -18,7 +18,7 @@
     <meta content='website' property='og:type'>
     <meta property="og:url" content="http://www.getcanoe.io" />
     <meta property="og:title" content="Canoe" />
-    <meta property="og:description" content="Manage your RaiBlocks accounts and transactions simply and easily." />
+    <meta property="og:description" content="Manage your Nano accounts and transactions simply and easily." />
     <meta property="og:image" content="http://www.getcanoe.io/canoe-image.jpg" />
 
     <link href="assets/css/styles.css?v=1.0" rel="stylesheet" />
@@ -33,10 +33,12 @@
   </head>
   <body>
     <nav class="navigation">
-      <a href="" class="navigation__link active">Home</a>
-      <a href="" class="navigation__link">Blog</a>
-      <a href="" class="navigation__link">Contribute</a>
-      <a href="" class="button">Download now</a>
+      <div class="navigation__row">
+        <a href="" class="navigation__link active">Home</a>
+        <a href="blog" class="navigation__link">Blog</a>
+        <a href="contribute.html" class="navigation__link">Contribute</a>
+        <!-- <a href="" class="button">Download now</a> -->
+      </div>
     </nav>
 
     <section class="hero">
@@ -46,9 +48,9 @@
         <p class="slogan">Manage your Nano accounts and transactions
           simply and easily.</p>
         <h3 class="download-title">Get Canoe now</h3>
-        <a href="downloads.html" class="button button--disabled"><span class="icon-windows button__icon"></span>Windows</a>
+        <a href="downloads.html" class="button button--disabled" id="download-button"><span class="button__icon"></span>Download</a>
         <!-- <a href="downloads.html" class="download-links">View all downloads</a> -->
-        <p class="download-disabled">Beta release coming february 2018.</p>
+        <p class="download-disabled">Beta release coming February 2018.</p>
         <img src="assets/img/home/hero-mockup.png" alt="" class="mockup">
       </div>
     </section>
@@ -63,28 +65,33 @@
 
     <!-- Wallet explanation  -->
     <section class="wallet">
-      <h2>How Canoe works</h2>
-      <div class="phone">
-        <img src="assets/img/home/iphone-frame.svg" alt="" class="phone__frame">
-        <img src="assets/img/home/screens/screen-1.jpg" alt="" class="phone__screen" id="phone-screen">
+      <h2>Why Canoe</h2>
+      <div class="wallet__row">
+        <div class="phone__wrapper">
+          <div class="phone">
+            <img src="assets/img/home/iphone-frame.svg" alt="" class="phone__frame">
+            <img src="assets/img/home/screens/screen-1.jpg" alt="" class="phone__screen active" data-id="1">
+            <img src="assets/img/home/screens/screen-2.jpg" alt="" class="phone__screen" data-id="2">
+            <img src="assets/img/home/screens/screen-3.jpg" alt="" class="phone__screen" data-id="3">
+          </div>
+        </div>
+        <ul class="feature-list">
+          <li class="feature-list__feature active" data-id="1">
+            <h4 class="feature-list__feature__title">Canoe is secure</h4> 
+            <p class="feature-list__feature__text">Nano is secured 100% cryptographically. Just don't lose your seed!</p>
+          </li>
+          <li class="feature-list__feature" data-id="2">
+            <h4 class="feature-list__feature__title">Nano is instant digital money</h4> 
+            <p class="feature-list__feature__text">Forget long waiting transaction times when transferring your crypto. Nano is instant!
+              Try it, we dare you. </p>
+          </li>
+          <li class="feature-list__feature" data-id="3">
+            <h4 class="feature-list__feature__title">Nano is feeless</h4> 
+            <p class="feature-list__feature__text">No more exorbitant transaction fees. Nano is truly feeless.</p>
+          </li>
+        </ul>
+        <div class="clear"></div>
       </div>
-      <ul class="feature-list">
-        <li class="feature-list__feature active" data-id="1">
-          <h4 class="feature-list__feature__title">Canoe is secure</h4> 
-          <p class="feature-list__feature__text">Forget long waiting transaction times when transferring your crypto. RaiBlocks is instant! 
-            Try it, we dare you.</p>
-        </li>
-        <li class="feature-list__feature" data-id="2">
-          <h4 class="feature-list__feature__title">Canoe is open-source</h4> 
-          <p class="feature-list__feature__text">Forget long waiting transaction times when transferring your crypto. RaiBlocks is instant! 
-              Try it, we dare you.</p>
-        </li>
-        <li class="feature-list__feature" data-id="3">
-          <h4 class="feature-list__feature__title">Canoe is cross-platform</h4> 
-          <p class="feature-list__feature__text">Forget long waiting transaction times when transferring your crypto. RaiBlocks is instant! 
-              Try it, we dare you.</p>
-        </li>
-      </ul>
     </section>
 
     <!-- Team -->
@@ -129,14 +136,17 @@
             <li class="team__member__icons__link"><a href="https://www.linkedin.com/in/miketasset/" target="_blank"><span class="icon-linkedin"></span></a></li>
           </ul>
         </figure>
-        <!-- Eunji -->
-        <!-- <figure class="team__member">
-          <img src="assets/img/home/team-eunji.jpg" alt="" class="team__member__image">
+        <!-- Tyler -->
+        <figure class="team__member">
+          <img src="assets/img/home/team-tyler.jpg" alt="" class="team__member__image">
           <figcaption> 
-            <h5 class="team__member__name">Noname yet<h5>
-            <h6 class="team__member__job">UI/UX designer<h6>
-            </figcaption> 
-        </figure> -->
+            <h5 class="team__member__name">Tyler Storm<h5>
+            <h6 class="team__member__job">Developer<h6>
+          </figcaption> 
+          <ul class="team__member__icons">
+            <li class="team__member__icons__link"><a href="https://github.com/Stormtv" target="_blank"><span class="icon-github"></span></a></li>
+          </ul>
+        </figure> 
         <div class="clear"></div>
       </div>
     </section>

@@ -1,22 +1,30 @@
 $(document).ready(function() {
   if ($.browser.android) {
-    $('.android-download-link').show();
+    $(".button__icon").addClass("icon-android");
+    // $("a").attr("href", "")
   }
   else if ($.browser.iphone || $.browser.ipad) {
-    $('.ios-download-link').show();
+    $(".button__icon").addClass("icon-apple");
   }
-  else {
-    $('.android-download-link').show();
-    $('.ios-download-link').show();
+  else if ($.browser.mac) {
+    $(".button__icon").addClass("icon-apple");
   }
+  else if ($.browser.win) {
+    $(".button__icon").addClass("icon-windows");
+  }
+  else if (browser["windows phone"]) {
+    $(".button__icon").addClass("icon-windows");
+  }
+
+  $("#download-button").click(function(e) {
+    e.preventDefault();
+  });
 
   $(".feature-list__feature").on("click", function() {
     var feature = $(this).data("id");
-    var src = "assets/img/home/screens/screen-" + feature + ".jpg";
-    console.log(feature);
-    console.log(src);
-    $("#phone-screen").attr("src", src);
     $(".feature-list__feature").removeClass("active");
+    $(".phone__screen").removeClass("active");
     $(this).addClass("active");
+    $('.phone__screen[data-id=' + feature + ']').addClass('active');
   });
 });

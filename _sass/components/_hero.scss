@@ -7,6 +7,7 @@
   z-index: 1;
   @media #{$desktop} {
     text-align: left;
+    padding: 0;
     height: 730px;
   }
 
@@ -30,6 +31,7 @@
     @media #{$desktop} {
       max-width: 1000px;
       padding: 0 20px;
+      height: 100%;
     }
   }
 
@@ -38,8 +40,9 @@
     max-width: 180px;
     display: block;
     @media #{$desktop} {
-      max-width: 240px;
-      margin-top: 150px;
+      max-width: 220px;
+      padding: 125px 0 0;
+      margin: 0;
     }
   }
 
@@ -57,13 +60,13 @@
     @include fontSize(18px);
 
     text-align: left;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
-    padding: 5px 0 0;
+    padding: 2px 0 0;
     color: $white;
     opacity: 0.75;
     @media #{$desktop} {
-      @include fontSize(22px);
+      @include fontSize(20px);
       white-space: pre-line;
     }
   }
@@ -107,12 +110,12 @@
   }
 
   .mockup {
-    // position: absolute;
-    // bottom: -40px;
-    // right: 0;
     display: none;
-    width: 80%;
     @media #{$desktop} {
+      position: absolute;
+      display: block;
+      bottom: -60px;
+      right: 60px;
     }
   }
 }
