@@ -1,0 +1,139 @@
+.wallet {
+  background-color: #f5f4f7;
+  padding: 75px 0;
+  @media #{$desktop} {
+    padding: 120px 0;
+  }
+
+  &__row {
+    width: 100%;
+    @media #{$desktop} {
+      align-items: center;
+      max-width: 1000px;
+      padding: 0 20px;
+      margin: 0 auto;
+      display: flex;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    @media #{$desktop} {
+      padding: 0 0 40px;
+    }
+  }
+
+  .phone {
+    margin: 40px auto 0;
+    position: relative;
+    width: 55%;
+    @media #{$desktop} {
+      display: inline-block;
+      float: left;
+      width: 63%;
+      margin: 0;
+    }
+
+    &__wrapper {
+      margin: 0 auto;
+      @media #{$desktop} {
+        width: calc(50% - 15px);
+        align-items: center;
+        display: flex;
+        float: left;
+        margin: 0;
+      }
+    }
+
+    &__frame {
+      width: 100%;
+    }
+
+    &__screen {
+      border: 1px solid $dark-grey;
+      position: absolute;
+      width: 87%;
+      top: 12%;
+      left: 6%;
+    }
+  }
+
+  .connector {
+    display: none;
+    @media #{$desktop} {
+      display: inline-block;
+      padding: 0 40px 0 30px;
+      float: left;
+      width: 37%;
+    }
+
+    .line {
+      transition: fill 0.2s linear;
+    }
+
+    .line.active, .circle {
+      fill: $green;
+    }
+  }
+
+  .feature-list {
+    margin: 30px 20px 0;
+    @media #{$desktop} {
+      width: calc(50% - 15px);
+      margin: 0;
+      float: left;
+    }
+
+    &__feature {
+      transition: all 0.4s ease-out;
+      box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
+      background-color: $white;
+      padding: 20px;
+      max-height: 20px;
+      overflow: hidden;
+      @media #{$desktop} {
+        cursor: pointer;
+        max-height: 400px;
+        padding: 40px;
+        width: 100%;
+      }
+
+      &__title {
+        transition: all 0.2s linear;
+      }
+
+      &__text {
+        transition: opacity 0.2s linear;
+        padding-top: 10px;
+        line-height: 1.35;
+        opacity: 0;
+        @media #{$desktop} {
+          padding-top: 15px;
+          opacity: 1;
+        }
+      }
+
+      + .feature-list__feature {
+        margin-top: 10px;
+        @media #{$desktop} {
+          margin-top: 16px;
+        }
+      }
+
+      &.active {
+        transition: all 0.4s ease-in 0.2s;
+        max-height: 300px;
+
+        .feature-list__feature__title {
+          transition: opacity 0.2s linear 0.2s;
+          color: $green;
+        } 
+
+        .feature-list__feature__text {
+          transition: opacity 0.2s linear 0.2s;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
