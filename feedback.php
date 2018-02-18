@@ -1,6 +1,5 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-
 $recipient="hello@getcanoe.io";
 $subject="Canoe feedback";
 $email=$_POST["Email"];
