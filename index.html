@@ -12,7 +12,9 @@
     <meta content='Canoe' property='og:site_name'>
 
     <meta name="theme-color" content="#311c67">
-    
+    <meta name="msapplication-navbutton-color" content="#311c67">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#311c67">
+
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Muli:600,700" rel="stylesheet">
 
     <meta content='website' property='og:type'>
@@ -31,13 +33,13 @@
     <link href='/js/libs/tooltipster/tooltipster.css' rel='stylesheet' type='text/css'>
     <script src="/js/libs/tooltipster/jquery.tooltipster.min.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body class="home">
     <nav class="navigation">
       <div class="navigation__row">
         <a href="" class="navigation__link active">Home</a>
         <a href="blog" class="navigation__link">Blog</a>
         <a href="contribute.html" class="navigation__link">Contribute</a>
-        <!-- <a href="" class="button">Download now</a> -->
+        <a href="{{ site.url }}/download.html" class="navigation__link navigation__link__button">Download</a>
       </div>
     </nav>
 

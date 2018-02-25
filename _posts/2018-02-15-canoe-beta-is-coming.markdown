@@ -50,10 +50,3 @@ And Canoe Beta will be released on all 5 platforms! No promises for Windows Phon
 If you have questions or want to help out, you can always reach us on our [discord server](https://discord.gg/ecVcJM3).
 
 Thank you, the Canoe team.
-
-<div style="margin: auto; width: 100%; padding: 10px">
-<img src="/assets/img/donate.png" style="display: block;margin-left: auto;margin-right: auto;"/><br>
-<div style="display:flex;align-items:center;justify-content:center;">
-<bold>xrb_1qckwc5o3obkrwbet4amnkya113xq77qpaknsmiq9hwq31tmd5bpyo7sepsw</bold>
-</div>
-</div>

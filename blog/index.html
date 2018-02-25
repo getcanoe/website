@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: blog
 ---
 {% for post in paginator.posts %}
 <article class="post">
@@ -8,21 +8,19 @@ layout: main
   {% else %}
   {% endif %}
   <div class="post-content">
-    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <p>{{ post.excerpt | strip_html | truncatewords: 80 }}</p>
-    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-
+    <h4 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
+    <p class="date">Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a> - {% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</p>
+    <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
     <!-- Look the author details up from the site config. -->
     {% assign author = site.data.authors[post.author] %}
 
     <!-- Output author details if some exist. -->
+    <p>
     {% if author %}
         <span>
             <!-- Personal Info. -->
-            Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
         </span>
     {% endif %}
-    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
   </div>
 </article>
 {% endfor %}

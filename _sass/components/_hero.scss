@@ -1,121 +1,154 @@
-.hero {
-  background: linear-gradient(135deg, #524988 0%,#311c67 100%);
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  padding: 0 0 80px;
-  z-index: 1;
-  @media #{$desktop} {
-    text-align: left;
-    padding: 0;
-    height: 730px;
-  }
-
-  &:after {
-    content: url('../img/home/border-hero-mobile.svg');
-    width: calc(100% + 20px);
-    position: absolute;
-    bottom: -4px;
-    left: -10px;
-    z-index: 2;
-    @media #{$desktop} {
-      content: url('../img/home/border-hero.svg');
-    }
-  }
-
-  &__row {
+.home {
+  .hero {
+    background: linear-gradient(135deg, #524988 0%,#311c67 100%);
     position: relative;
-    padding: 0 25px;
-    margin: 0 auto;
-    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 0 80px;
+    z-index: 1;
     @media #{$desktop} {
-      max-width: 1000px;
-      padding: 0 20px;
-      height: 100%;
+      text-align: left;
+      padding: 0;
+      height: 730px;
     }
-  }
 
-  .logo {
-    margin: 50px auto 0;
-    max-width: 180px;
-    display: block;
-    @media #{$desktop} {
-      max-width: 220px;
-      padding: 125px 0 0;
-      margin: 0;
-    }
-  }
-
-  .title {
-    margin: 40px 0 10px;
-    color: $white;
-    line-height: 1;
-    text-align: left;
-    @media #{$desktop} {
-      margin: 40px 0 10px;
-    }
-  }
-
-  .slogan {
-    @include fontSize(18px);
-
-    text-align: left;
-    font-weight: 300;
-    line-height: 1.5;
-    padding: 2px 0 0;
-    color: $white;
-    opacity: 0.75;
-    @media #{$desktop} {
-      @include fontSize(20px);
-      white-space: pre-line;
-    }
-  }
-
-  .download-title {  
-    margin: 40px 0 20px;
-    color: $white;
-    font-weight: 600;
-    @media #{$desktop} {
-      margin: 50px 0 20px;
-    }
-  }
-
-  .download-links {
-    @include fontSize(17px);
-
-    text-decoration: underline;
-    letter-spacing: 0.4px;
-    font-family: $lato;
-    margin: 20px 0 0;
-    font-weight: 300;
-    display: block;
-    color: $white;
-    @media #{$desktop} {
-      margin: 40px 0 0;
-    }
-  }
-
-  .download-disabled {
-    @include fontSize(17px);
-
-    letter-spacing: 0.4px;
-    font-family: $lato;
-    margin: 20px 0 0;
-    font-weight: 400;
-    display: block;
-    color: $white;
-    @media #{$desktop} {
-      margin: 40px 0 0;
-    }
-  }
-
-  .mockup {
-    display: none;
-    @media #{$desktop} {
+    &:after {
+      content: url('../img/home/border-hero-mobile.svg');
+      width: calc(100% + 20px);
       position: absolute;
+      bottom: -4px;
+      left: -10px;
+      z-index: 2;
+      @media #{$desktop} {
+        content: url('../img/home/border-hero.svg');
+      }
+    }
+
+    &__row {
+      position: relative;
+      padding: 0 25px;
+      margin: 0 auto;
+      height: 100%;
+      @media #{$desktop} {
+        max-width: 1000px;
+        padding: 0 20px;
+        height: 100%;
+      }
+    }
+
+    .logo {
+      margin: 50px auto 0;
+      max-width: 180px;
       display: block;
-      bottom: -60px;
-      right: 60px;
+      @media #{$desktop} {
+        max-width: 220px;
+        padding: 125px 0 0;
+        margin: 0;
+      }
+    }
+
+    .title {
+      margin: 40px 0 10px;
+      color: $white;
+      line-height: 1;
+      text-align: left;
+      @media #{$desktop} {
+        margin: 40px 0 10px;
+      }
+    }
+
+    .slogan {
+      @include fontSize(18px);
+
+      text-align: left;
+      font-weight: 300;
+      line-height: 1.5;
+      padding: 2px 0 0;
+      color: $white;
+      opacity: 0.75;
+      @media #{$desktop} {
+        @include fontSize(20px);
+        white-space: pre-line;
+      }
+    }
+
+    .download-title {  
+      margin: 40px 0 20px;
+      color: $white;
+      font-weight: 600;
+      @media #{$desktop} {
+        margin: 50px 0 20px;
+      }
+    }
+
+    .download-links {
+      @include fontSize(17px);
+
+      text-decoration: underline;
+      letter-spacing: 0.4px;
+      font-family: $lato;
+      margin: 20px 0 0;
+      font-weight: 300;
+      display: block;
+      color: $white;
+      @media #{$desktop} {
+        margin: 40px 0 0;
+      }
+    }
+
+    .download-disabled {
+      @include fontSize(17px);
+
+      letter-spacing: 0.4px;
+      font-family: $lato;
+      margin: 20px 0 0;
+      font-weight: 400;
+      display: block;
+      color: $white;
+      @media #{$desktop} {
+        margin: 40px 0 0;
+      }
+    }
+
+    .mockup {
+      display: none;
+      @media #{$desktop} {
+        position: absolute;
+        display: block;
+        bottom: -60px;
+        right: 60px;
+      }
+    }
+  }
+}
+
+.page {
+  .hero {
+    background: linear-gradient(135deg, #524988 0%,#311c67 100%);
+    padding: 15px 0;
+    z-index: 1;
+    @media #{$desktop} {
+      text-align: left;
+      padding: 20px 0;
+    }
+
+    &__row {
+      position: relative;
+      padding: 0 25px;
+      margin: 0 auto;
+      height: 100%;
+      @media #{$desktop} {
+        max-width: 1045px;
+        padding: 0 20px;
+      }
+    }
+    
+    .logo {
+      max-width: 120px;
+      display: block;
+      @media #{$desktop} {
+        max-width: 160px;
+      }
     }
   }
 }
