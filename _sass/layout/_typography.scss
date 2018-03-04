@@ -109,6 +109,12 @@ p {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-google-round:before {
+  content: "\e904";
+}
+.icon-facebook-round:before {
+  content: "\e90b";
+}
 .icon-twitter-round:before {
   content: "\e903";
 }
@@ -117,9 +123,6 @@ p {
 }
 .icon-linux:before {
   content: "\e901";
-}
-.icon-android:before {
-  content: "\e902";
 }
 .icon-github-round:before {
   content: "\e905";

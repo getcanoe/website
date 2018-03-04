@@ -32,7 +32,7 @@
     font-family: $lato;
     font-weight: 300;
     color: $dark-grey;
-    padding: 0 20px;
+    padding: 0 10px;
     @media #{$desktop} {
       transition: 0.2s linear;
       @include fontSize(17px);
@@ -43,11 +43,37 @@
         color: $blue;
       }
     }
-
+    
     + .navigation__link {
       // padding: 0 0 0 40px;
       @media #{$desktop} {
         padding: 0 0 0 50px;
+      }
+    }
+
+    &__button {
+      color: $blue;
+      font-weight: 600;
+      @media #{$desktop} {
+        @include fontSize(14px);
+
+        transition: background-color 0.2s linear;
+        box-shadow: 0 3px 10px 0 rgba(0,0,0,0.15);
+        padding: 14px 30px !important;
+        background-color: $blue;
+        text-decoration: none;
+        display: inline-block;
+        letter-spacing: 0.4px;
+        border-radius: 36px;
+        font-family: $lato;
+        margin: 0 0 0 50px;
+        font-weight: 400;
+        color: $white;
+        
+        &:hover {
+          background-color: $blue-hover;
+          color: $white;
+        }      
       }
     }
 
@@ -63,6 +89,14 @@
       margin: 0 0 0 55px;   
       padding: 14px 30px;
       font-weight: 600; 
+    }
+  }
+}
+
+.page {
+  .navigation {
+    @media #{$desktop} {
+      padding: 25px 0;
     }
   }
 }

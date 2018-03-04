@@ -52,10 +52,3 @@ Thank you for being part of this project at such an early stage!
 We invite anyone to contribute to Canoe. You can help us by joining as a developer, reporting issues, fixing bugs, translating, chatting encouraging words on discord - or donating some XRB. This is true Open Source, everything is done in the open.
 
 Regards, the Canoe Team (Göran, Rami, Josh, Mike)
-
-<div style="margin: auto; width: 100%; padding: 10px">
-<img src="/assets/img/donate.png" style="display: block;margin-left: auto;margin-right: auto;"/><br>
-<div style="display:flex;align-items:center;justify-content:center;">
-<bold>xrb_1qckwc5o3obkrwbet4amnkya113xq77qpaknsmiq9hwq31tmd5bpyo7sepsw</bold>
-</div>
-</div>
