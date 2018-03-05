@@ -8,6 +8,11 @@ layout: default
     <header class="post__header">
       <h1 class="post__header__title">{{page.title}}</h1>
       <p class="post__header__date">{{page.date | date: '%b %d, %Y'}} {% if author %}- Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>{% endif %}</p>
+      <div class="tags">
+        {% for tag in page.tags %}
+          <a href="{{site.baseurl}}/tags#{{tag}}" class="tags__tag">&#35; {{ tag }}</a>
+        {% endfor %}
+      </div>
       <ul class="post__header__share__icons">
         <li class="post__header__share__icons__link"><a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}" title="Share on Twitter" rel="nofollow" target="_blank"><span class="icon-twitter-round"></span></a></li>
         <li class="post__header__share__icons__link"><a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" rel="nofollow" target="_blank"><span class="icon-facebook-round"></span></a></li>
@@ -16,12 +21,7 @@ layout: default
     </header>
     <div class="post__content">
       {{page.content | markdownify}}
-        <!-- <div class="page-tag">
-          {% for tag in page.tags %}
-            <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ tag }}</a>
-          {% endfor %}
-        </div> -->
-        {% include donate.html %}
+
+      {% include donate.html %}
     </div>
-  <!-- {% include disqus.html %} -->
-</article> <!-- End Article Page -->
+</article> 

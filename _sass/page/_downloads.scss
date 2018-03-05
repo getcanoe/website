@@ -83,12 +83,6 @@
           } 
         }
 
-        a {
-          &:hover {
-            color: $blue;
-          }
-        }
-
         &__text {
           @include fontSize(15px);
           padding: 18px 0 0;
