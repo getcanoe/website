@@ -109,6 +109,9 @@ p {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-android:before {
+  content: "\e902";
+}
 .icon-google-round:before {
   content: "\e904";
 }

@@ -1,0 +1,134 @@
+.downloads {
+  margin: 50px 20px;
+  @media #{$desktop} {
+    max-width: 800px;
+    margin: 80px auto 60px;
+  }
+
+  .section-title {
+		text-align: center;
+		padding: 0 0 30px;
+		@media #{$desktop} {
+			padding: 0 0 40px;
+		}
+  }
+  
+  &__content {
+    @media #{$desktop} {
+      flex-direction: column;
+      display: flex;
+    }
+
+    .desktop, .mobile {
+      padding: 20px 0 20px;
+    }
+
+    .desktop {
+      @media #{$desktop} {
+        order: 1;
+      }
+    }
+
+    .mobile {
+      @media #{$desktop} {
+        padding: 40px 0 20px;
+        order: 2;
+      }
+    }
+
+    h3 {
+      color: $dark-grey;
+      text-align: center;
+      padding: 0 0 16px;
+      @media #{$desktop} {
+        text-align: left;
+        padding: 0 0 22px;
+      }
+    }
+
+    .links {
+      &__platform {
+        text-align: center;
+        padding: 20px 0;
+        @media #{$desktop} {
+          width: calc(100% / 3);
+          float: left;
+        }
+
+        &__link {
+          text-decoration: none;
+        }
+
+        &__icon {
+          transition: 0.2s linear;
+          font-size: 90px;
+          color: #8E9097;
+          @media #{$desktop} {
+            font-size: 72px;
+            &:hover {
+              color: $blue;
+            }
+          }
+        }
+
+        p, a {
+          text-transform: uppercase;
+          text-decoration: none;
+          font-family: $lato;
+          // font-weight: 400;
+          color: $dark-grey;
+          @media #{$desktop} {
+            transition: 0.2s linear;
+            letter-spacing: 0;
+          } 
+        }
+
+        a {
+          &:hover {
+            color: $blue;
+          }
+        }
+
+        &__text {
+          @include fontSize(15px);
+          padding: 18px 0 0;
+          color: $blue !important;
+          font-weight: 600;
+          @media #{$desktop} {
+            @include fontSize(13px);
+          }
+        }
+
+        &__checksum {
+          @include fontSize(13px);
+          padding: 12px 0 0;
+        }
+
+        &__files {
+          width: 100%;
+          text-align: center;
+        }
+
+        &__file {
+          display: inline-block;
+          padding: 8px 0 0;
+
+          a {
+            @include fontSize(13px);
+            color: $blue;
+            @media #{$desktop} {
+              @include fontSize(13px);
+            }
+          }
+        }
+
+        + .links__platform {
+          margin-top: 20px;
+          @media #{$desktop} {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
