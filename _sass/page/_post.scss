@@ -42,8 +42,8 @@
         &__link {
           margin: 15px 0 0;
           display: inline-block;
-          font-size: 32px;
-          padding: 0 5px 0 0;
+          font-size: 36px;
+          padding: 0 6px 0 0;
           color: $white;
           @media #{$desktop} {
             font-size: 30px;
@@ -123,6 +123,28 @@
 
     ol {
       list-style-type: decimal;
+    }
+  }
+}
+
+.tags {
+  width: 100%;
+  padding: 15px 0 5px;
+
+  &__tag {
+    @include fontSize(14px);
+
+    transition: background-color 0.2s linear;
+    background-color: $blue;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 0.4px;
+    font-family: $lato;
+    padding: 8px 12px;
+    font-weight: 400;
+    color: $white;
+    margin: 0 4px 0 0;
+    @media #{$desktop} {
     }
   }
 }

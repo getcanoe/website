@@ -1,11 +1,12 @@
 ---
 layout: blog
+title: Canoe | Blog
+heading: Canoe blog
 ---
 {% for post in paginator.posts %}
 <article class="post">
   {% if post.img %}
     <a class="post-thumbnail" style="background-image: url({{"../assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-  {% else %}
   {% endif %}
   <div class="post-content">
     <h4 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
@@ -15,7 +16,6 @@ layout: blog
     {% assign author = site.data.authors[post.author] %}
 
     <!-- Output author details if some exist. -->
-    <p>
     {% if author %}
         <span>
             <!-- Personal Info. -->
@@ -24,5 +24,3 @@ layout: blog
   </div>
 </article>
 {% endfor %}
-
-{% include pagination.html %}

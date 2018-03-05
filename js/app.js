@@ -12,8 +12,8 @@ $(document).ready(function() {
   else if ($.browser.win) {
     $(".button__icon").addClass("icon-windows");
   }
-  else if (browser["windows phone"]) {
-    $(".button__icon").addClass("icon-windows");
+  else if ($.browser.linux) {
+    $(".button__icon").addClass("icon-linux");
   }
 
   $("#download-button").click(function(e) {
