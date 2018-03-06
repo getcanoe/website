@@ -1,9 +1,7 @@
 ---
 layout: main
 ---
-
 # Contribute 
-
 There are many ways to help with the Canoe wallet! If you are a developer, want to help with [translating to your language](https://poeditor.com/join/project/cnSZa85DRN) or want to help us test Canoe - find us on [discord](https://discord.gg/ecVcJM3) and join in the actual work. 
 
 ## Ideas
