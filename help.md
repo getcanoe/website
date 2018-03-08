@@ -1,8 +1,7 @@
 ---
-layout: main
+layout: help
 ---
 
-# Help and Support
 The best way currently to get help is to:
 
 * Ask on the community chat on [discord](https://discord.gg/ecVcJM3).
