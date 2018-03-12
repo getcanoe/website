@@ -191,8 +191,13 @@
         }
 
         &__checksum {
+          overflow-wrap: break-word;
           @include fontSize(13px);
+          word-break: break-word;
+          word-wrap: break-word;
+          word-break: break-all;
           padding: 10px 0 0;
+          line-height: 1.5;
         }
 
         &__files {
