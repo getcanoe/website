@@ -12,6 +12,24 @@
 		}
   }
   
+  &__intro {
+    text-align: center;
+    line-height: 1.45;
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto;
+    @media #{$desktop} {
+      white-space: pre-line;
+      margin: 0 auto 30px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $blue;
+      font-weight: 600;
+    }
+  }
+
   &__content {
     @media #{$desktop} {
       flex-direction: column;
@@ -44,8 +62,8 @@
     .how-to {
       background-color: #f5f4f7;
       @media #{$desktop} {
-        padding: 100px 0 20px;
-        margin: 80px 0 0;
+        padding: 70px 0 20px;
+        margin: 50px 0 0;
         order: 3;
       }
 
@@ -215,10 +233,10 @@
 }
 
 .notice {
+  margin: 15px auto 0;
   text-align: center;
   max-width: 1000px;
   font-weight: 600;
-  margin: 0 auto;
   padding: 0 20px;
   line-height: 1.45;
   @media #{$desktop} {
