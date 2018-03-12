@@ -9,10 +9,10 @@
   bottom: 0;
   @media #{$desktop} {
     background-color: rgba(0,0,0,0);
+    position: absolute;
     text-align: right;
     padding: 50px 0;
     bottom: auto;
-    position: absolute;
     top: 0;
   }
 

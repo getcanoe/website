@@ -1,4 +1,4 @@
-.contribute {
+.main-page {
   margin: 50px 20px;
   @media #{$desktop} {
     max-width: 800px;
@@ -13,7 +13,7 @@
 		}
   }
   
-  &__content {
+  &__row {
     h2 {
       @include fontSize(22px);
   
