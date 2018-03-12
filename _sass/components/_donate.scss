@@ -1,0 +1,22 @@
+.donate {
+    margin: 50px 0 30px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    p {
+      overflow-wrap: break-word;
+      word-break: break-word;
+      word-wrap: break-word;
+      word-break: break-all;
+      padding: 10px 0 0;
+      text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+        padding: 0 0 20px;
+    }
+}

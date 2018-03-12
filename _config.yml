@@ -14,7 +14,7 @@ site-twitter: canoewallet #if your site has a twitter account, enter it here
 # Author Settings
 author: Canoe Blog
 author-img: canoe-icon-negative.png 
-description: Canoe the RaiBlocks Wallet
+description: Canoe the Nano Wallet
 about-author:  # add description
 twitter: canoewallet # add your Twitter handle
 github: getcanoe # add your Github handle
@@ -28,7 +28,8 @@ markdown: kramdown
 plugins_dir:
   - jekyll-sitemap
   - jemoji
-
+# plugins:
+# - jekyll-autoprefixer
 gems:
   - jekyll-paginate
 
@@ -37,3 +38,10 @@ paginate: 10
 paginate_path: "/blog/page:num"
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+
+excerpt_separator: <!--more-->
+
+# Sass settings
+sass:
+    sass_dir: _sass
+    style: :compressed

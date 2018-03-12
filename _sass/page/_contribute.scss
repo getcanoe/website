@@ -1,0 +1,50 @@
+.contribute {
+  margin: 50px 20px;
+  @media #{$desktop} {
+    max-width: 800px;
+    margin: 80px auto 60px;
+  }
+
+  .section-title {
+		text-align: center;
+		padding: 0 0 30px;
+		@media #{$desktop} {
+			padding: 0 0 40px;
+		}
+  }
+  
+  &__content {
+    h2 {
+      @include fontSize(22px);
+  
+      padding: 30px 0 10px;
+      font-family: $muli;  
+      font-weight: 700;
+      color: $dark-grey;
+      @media #{$desktop} {
+        @include fontSize(20px);
+        padding: 30px 0 10px;
+      } 
+
+      &:first-child {
+        padding: 0;
+      }
+    }
+
+    p {
+      line-height: 1.35;
+      @media #{$desktop} {
+        line-height: 1.5;
+      }
+
+      + p {
+        padding: 15px 0 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
