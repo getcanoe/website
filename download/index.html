@@ -94,25 +94,20 @@ heading: Download Canoe
       <li>Download the Canoe zip and the corresponding signature file to the same folder.</li>
       <li>Change to the download folder, or wherever you saved them, and run in terminal:</li>
     </ul>
-    <pre>
-gpg --verify canoe-linux64*.zip.sig canoe-linux64*.zip</b>
-sha256sum canoe-linux64*
-    </pre>
+    <pre>gpg --verify canoe-linux64*.zip.sig canoe-linux64*.zip</b>
+sha256sum canoe-linux64*</pre>
 
     <p>The results should look like this:</p>
     <p><b>GPG signature</b></p>
-    <pre>
-gpg: Signature made Fri 09 Mar 2018 22:30:43 UTC using RSA key ID E7ADC266
+    <pre>gpg: Signature made Fri 09 Mar 2018 22:30:43 UTC using RSA key ID E7ADC266
 gpg: Good signature from "Göran Krampe (getcanoe.io) <goran.krampe@gmail.com>"
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: DEEA 6E35 887D 0F0D 1C6E  196E F48B 339E E7AD C266
-    </pre>
+Primary key fingerprint: DEEA 6E35 887D 0F0D 1C6E  196E F48B 339E E7AD C266</pre>
     <p><b>sha256sum</b></p>
     <pre>
 dc92945059fed0732948589e718024f0ac1ae8f8dc11e9e5f21aebe3bf3c1156  canoe-linux64-0.3.2.zip
-b82a3c026fed57e54597ee4c9f7d5660b5c8dd4e47a056631d7e9693ba36b2be  canoe-linux64-0.3.2.zip.sig
-</pre>
+b82a3c026fed57e54597ee4c9f7d5660b5c8dd4e47a056631d7e9693ba36b2be  canoe-linux64-0.3.2.zip.sig</pre>
     <p>Compare the checksum printed with the relative checksum shown in the download page - they should match.</p>
 
     <h4><span class="icon-apple icon"></span>On Mac OSX</h4>
@@ -122,10 +117,8 @@ b82a3c026fed57e54597ee4c9f7d5660b5c8dd4e47a056631d7e9693ba36b2be  canoe-linux64-
       <li>Press cmd + A to select all, then copy / paste that information into your GPG Keychain main window - that will import our public key.</li>
       <li>Run the following commands in Terminal.app:</li>
     </ul>
-    <pre>
-gpg --verify canoe-osx64*.zip.sig canoe-osx64*.zip
-openssl sha -sha256 canoe-osx64*.zip
-    </pre>
+    <pre>gpg --verify canoe-osx64*.zip.sig canoe-osx64*.zip
+openssl sha -sha256 canoe-osx64*.zip</pre>
     <p>The results should look like this:</p>
     <p><b>GPG signature</b></p>
     <pre>GPG: Signature made Wed Mar  7 11:24:32 2018 CET
@@ -135,10 +128,8 @@ GPG: WARNING: This key is not certified with a trusted signature!
 GPG:          There is no indication that the signature belongs to the owner.
 Primary key fingerprint: DEEA 6E35 887D 0F0D 1C6E  196E F48B 339E E7AD C266</pre>
     <p><b>sha256sum</b></p>
-<pre>
-SHA256(canoe-linux64-0.3.2.zip)= dc92945059fed0732948589e718024f0ac1ae8f8dc11e9e5f21aebe3bf3c1156
-SHA256(canoe-linux64-0.3.2.zip.sig)= b82a3c026fed57e54597ee4c9f7d5660b5c8dd4e47a056631d7e9693ba36b2b
-</pre>
+<pre>SHA256(canoe-linux64-0.3.2.zip)= dc92945059fed0732948589e718024f0ac1ae8f8dc11e9e5f21aebe3bf3c1156
+SHA256(canoe-linux64-0.3.2.zip.sig)= b82a3c026fed57e54597ee4c9f7d5660b5c8dd4e47a056631d7e9693ba36b2b</pre>
     <p>Compare the checksum printed with the relative checksum shown in the download page - they should match.</p>
     <h4><span class="icon-windows icon"></span>On Windows</h4>
     <p>Coming soon.</p>
