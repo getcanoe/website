@@ -1,0 +1,11 @@
+/* STICKY FOOTER FTW */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1;
+}
