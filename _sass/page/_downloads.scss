@@ -145,7 +145,7 @@
           @media #{$desktop} {
             font-size: 72px;
             &:hover {
-              color: $blue;
+              // color: $blue;
             }
           }
         }
@@ -165,7 +165,7 @@
         &__text {
           @include fontSize(15px);
           padding: 18px 0 0;
-          color: $blue !important;
+          color: $dark-grey !important;
           font-weight: 600;
           @media #{$desktop} {
             @include fontSize(13px);
@@ -174,12 +174,17 @@
 
         &__checksum {
           @include fontSize(13px);
-          padding: 12px 0 0;
+          padding: 10px 0 0;
         }
 
         &__files {
           width: 100%;
           text-align: center;
+          margin: 5px 0 0;
+
+          + .links__platform__files {
+            margin: 0;
+          }
         }
 
         &__file {
@@ -187,8 +192,11 @@
           padding: 8px 0 0;
 
           a {
+            pointer-events: none;
+            
+
             @include fontSize(13px);
-            color: $blue;
+            color: #b3b3b3;
             @media #{$desktop} {
               @include fontSize(13px);
             }
@@ -203,5 +211,17 @@
         }
       }
     }
+  }
+}
+
+.notice {
+  text-align: center;
+  max-width: 1000px;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 1.45;
+  @media #{$desktop} {
+    margin: 0 auto 30px;
   }
 }
