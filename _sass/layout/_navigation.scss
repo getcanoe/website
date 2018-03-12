@@ -3,7 +3,7 @@
   background-color: $white;
   text-align: center;
   position: fixed;
-  padding: 20px 0;
+  padding: 16px 0;
   z-index: 1000;
   width: 100%;
   bottom: 0;
@@ -30,10 +30,11 @@
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.4px;
+    display: inline-block;
     font-family: $lato;
     font-weight: 300;
     color: $dark-grey;
-    padding: 0 10px;
+    padding: 5px 10px;
     @media #{$desktop} {
       transition: 0.2s linear;
       @include fontSize(17px);
