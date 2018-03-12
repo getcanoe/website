@@ -28,7 +28,7 @@
     max-width: 200px;
     margin: 0 auto;
     @media #{$desktop} {
-      margin: 0 30px;
+      margin: 0 30px 50px;
       max-width: none;
       float: left;
       width: calc(100% / 4 - 60px);
