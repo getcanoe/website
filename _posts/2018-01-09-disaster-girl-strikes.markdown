@@ -37,10 +37,3 @@ Thank you for being part of this project at such an early stage. If you'd like t
 And once more... **THANK YOU LUKE!**
 
 Regards, the Canoe Team
-
-<div style="margin: auto; width: 100%; padding: 10px">
-<img src="/assets/img/donate.png" style="display: block;margin-left: auto;margin-right: auto;"/><br>
-<div style="display:flex;align-items:center;justify-content:center;">
-<bold>xrb_1qckwc5o3obkrwbet4amnkya113xq77qpaknsmiq9hwq31tmd5bpyo7sepsw</bold>
-</div>
-</div>

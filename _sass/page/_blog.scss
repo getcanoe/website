@@ -1,0 +1,95 @@
+.blog {
+	padding: 50px 0;
+	@media #{$desktop} {
+		padding: 80px 0;
+		max-width: 1045px;
+		margin: 0 auto;
+		overflow: auto;
+	}
+
+	.section-title {
+		text-align: center;
+		padding: 0 0 10px;
+		@media #{$desktop} {
+			padding: 0 0 40px;
+		}
+	}
+
+	.post {
+		box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
+		background-color: $white;
+		width: calc(100% - 40px);
+		margin: 20px;
+		@media #{$desktop} {
+			width: calc(100% / 3 - 30px);
+			// padding: 40px;
+			margin: 15px;
+			float: left;
+		}
+		
+
+		.post-thumbnail {
+			display: inline-block;
+			background-size: cover;
+			background-position: center;
+			border-bottom: 1px solid #f1f0f2;
+			height: 200px;
+			width: 100%;
+		}
+
+		.post-content {
+			padding: 30px;
+
+			h4 {
+				text-align: left;
+	
+				a {
+					transition: 0.2s linear;
+					color: $dark-grey;
+					text-decoration: none;
+
+					&:hover {
+						color: $green;
+					}
+				}
+			}
+
+			.date {
+				font-size: 0.875em;
+				padding: 8px 0 18px;
+				a {
+					color: $blue;
+					text-decoration: none;
+					font-weight: 600;
+					
+				}
+			}
+
+			p {
+				line-height: 1.35;
+				// padding-top: 15px;
+			}
+		}
+	}
+
+	&__grid {
+		@media #{$desktop} {
+			flex-direction: row;
+			flex-wrap: wrap;
+			display: flex;
+			width: 100%;
+		}
+	}
+}
+
+.page {
+	background-color: #f8f7fa;
+}
+
+.pagination {
+	margin: 30px 20px 5px;
+	width: calc(100% - 40px);
+	@media #{$desktop} {
+		padding: 20px 15px 0;
+	}
+}

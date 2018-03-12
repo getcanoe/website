@@ -1,0 +1,42 @@
+.anouncement {
+  background-color: #2bbc67;
+  position: relative;
+  padding: 15px 0;
+  width: 100%;
+  z-index: 2;
+
+  &__row {
+    position: relative;
+    padding: 0 25px;
+    margin: 0 auto;
+    height: 100%;
+    @media #{$desktop} {
+      max-width: 1000px;
+      padding: 0 20px;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    white-space: pre-line;
+    text-align: center;
+    line-height: 1.35;
+    color: $white;
+    @media #{$desktop} {
+      line-height: 1.5;
+    }
+  }
+
+  &__readmore {
+    display: inline-block;
+    padding: 6px 0 3px;
+
+    a {
+      font-weight: 600;
+      color: $white;
+      &:visited {
+        color: $white;
+      }
+    }
+  }
+}

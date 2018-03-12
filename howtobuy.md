@@ -1,8 +1,9 @@
 ---
-layout: main
+layout: main-page
+title: Canoe | How to buy
+heading: How to buy Nano
 ---
 
-# How To Buy and Sell Nanos
 So, you want to buy some Nano? Are you ready to experience the wonders of feeless &amp; instant commerce? Maybe you’ve already invested in Nano (or RaiBlocks, if you’ve been around a while!) and want to ‘cash out’? Well, here is a simple guide on how to buy or sell Nano.  
 
 ## The Easiest Way

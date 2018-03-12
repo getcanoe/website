@@ -1,0 +1,155 @@
+h1 {
+  @include fontSize(30px);
+
+  font-family: $muli;  
+  font-weight: 600;
+  line-height: 1.35;
+  @media #{$desktop} {
+    @include fontSize(34px);
+  }
+}
+
+h2 {
+  @include fontSize(28px);
+
+  font-family: $muli;  
+  font-weight: 700;
+  color: $dark-grey;
+  @media #{$desktop} {
+    @include fontSize(30px);
+  }
+}
+
+h3 {
+  @include fontSize(22px);
+
+  font-family: $muli;  
+  font-weight: 700;
+  @media #{$desktop} {
+    @include fontSize(24px);
+  }
+}
+
+h4 {
+  @include fontSize(18px);
+
+  font-family: $muli;  
+  font-weight: 700;
+  color: $dark-grey;
+  @media #{$desktop} {
+
+  }
+}
+
+h5 {
+  @include fontSize(20px);
+
+  font-family: $muli;  
+  font-weight: 700;
+}
+
+p {
+  font-family: $lato;
+  color: #363B49;
+}
+
+.button {
+  @include fontSize(18px);
+
+  transition: background-color 0.2s linear;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.15);
+  background-color: $blue;
+  text-decoration: none;
+  display: inline-block;
+  letter-spacing: 0.4px;
+  border-radius: 36px;
+  font-family: $lato;
+  padding: 12px 30px;
+  font-weight: 400;
+  color: $white;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &__icon {
+    vertical-align: sub;
+    padding: 0 15px 0 0;
+    font-size: 25px;
+  }
+
+  &--disabled {
+    cursor: default;
+    opacity: 0.6;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?9cv17x');
+  src:  url('../fonts/icomoon/icomoon.eot?9cv17x#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?9cv17x') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?9cv17x') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?9cv17x#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-android:before {
+  content: "\e902";
+}
+.icon-google-round:before {
+  content: "\e904";
+}
+.icon-facebook-round:before {
+  content: "\e90b";
+}
+.icon-twitter-round:before {
+  content: "\e903";
+}
+.icon-apple:before {
+  content: "\e900";
+}
+.icon-linux:before {
+  content: "\e901";
+}
+.icon-github-round:before {
+  content: "\e905";
+}
+.icon-discord-round:before {
+  content: "\e906";
+}
+.icon-github:before {
+  content: "\e907";
+}
+.icon-linkedin:before {
+  content: "\e908";
+}
+.icon-twitter:before {
+  content: "\e909";
+}
+.icon-url:before {
+  content: "\e90a";
+}
+.icon-windows:before {
+  content: "\eac2";
+}

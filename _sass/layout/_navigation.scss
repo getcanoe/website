@@ -1,0 +1,105 @@
+.navigation {
+  box-shadow: 0 -3px 10px 0 rgba(0,0,0,0.10);
+  background-color: $white;
+  text-align: center;
+  position: fixed;
+  padding: 16px 0;
+  z-index: 1000;
+  width: 100%;
+  bottom: 0;
+  @media #{$desktop} {
+    background-color: rgba(0,0,0,0);
+    pointer-events: none;    
+    position: absolute;
+    text-align: right;
+    padding: 110px 0;
+    bottom: auto;
+    top: 0;
+  }
+
+  &__row {
+    @media #{$desktop} {
+      max-width: 1000px;
+      padding: 0 20px; 
+      margin: 0 auto;
+    } 
+  }
+
+  &__link {
+    @include fontSize(14px);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4px;
+    display: inline-block;
+    font-family: $lato;
+    font-weight: 300;
+    color: $dark-grey;
+    padding: 5px 10px;
+    @media #{$desktop} {
+      transition: 0.2s linear;
+      @include fontSize(17px);
+      color: $white;
+      padding: 0;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+    
+    + .navigation__link {
+      // padding: 0 0 0 40px;
+      @media #{$desktop} {
+        pointer-events: all;
+        padding: 0 0 0 50px;
+      }
+    }
+
+    &__button {
+      color: $blue;
+      font-weight: 600;
+      @media #{$desktop} {
+        @include fontSize(14px);
+
+        transition: background-color 0.2s linear;
+        box-shadow: 0 3px 10px 0 rgba(0,0,0,0.15);
+        padding: 14px 30px !important;
+        background-color: $blue;
+        text-decoration: none;
+        display: inline-block;
+        letter-spacing: 0.4px;
+        border-radius: 36px;
+        font-family: $lato;
+        margin: 0 0 0 50px;
+        font-weight: 400;
+        color: $white;
+        
+        &:hover {
+          background-color: $blue-hover;
+          color: $white;
+        }      
+      }
+    }
+
+    &.active {
+      font-weight: 600;
+    }
+  }
+
+  .button {
+    display: none;
+    @media #{$desktop} {
+      @include fontSize(17px);
+      margin: 0 0 0 55px;   
+      padding: 14px 30px;
+      font-weight: 600; 
+    }
+  }
+}
+
+.page {
+  .navigation {
+    @media #{$desktop} {
+      padding: 110px 0 25px;
+    }
+  }
+}

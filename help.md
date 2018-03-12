@@ -1,10 +1,10 @@
 ---
-layout: main
+layout: main-page
+title: Canoe | Help
+heading: Help
 ---
 
-# Help and Support
 The best way currently to get help is to:
-
 * Ask on the community chat on [discord](https://discord.gg/ecVcJM3).
 * Look in our [github issue tracker](http://github.com/getcanoe/canoe/issues) to see if the problem is already described there including any help around it.
 

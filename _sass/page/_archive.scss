@@ -1,0 +1,47 @@
+.archive {
+  padding: 30px 20px;
+  @media #{$desktop} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__group {
+    @media #{$desktop} {
+      width: calc(100% / 3 - 30px);
+      margin: 0 15px 30px;
+      float: left;
+    }
+    .tag {
+      padding: 0 0 15px;
+    }
+
+    .archive-item {
+      padding: 7px 0;
+      @media #{$desktop} {
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-family: $lato;
+      color: $dark-grey;
+      padding: 3px 0;
+      @media #{$desktop} {
+        transition: 0.2s linear;
+        padding: 3px 0;
+
+        &:hover {
+          color: $blue;
+        }
+      } 
+    }
+
+    + .archive__group {
+       margin: 40px 0 0;
+       @media #{$desktop} {
+        margin: 0 15px 30px;
+      }
+    }
+  }
+}

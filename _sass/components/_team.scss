@@ -1,0 +1,113 @@
+.team {
+  padding: 75px 0;
+  @media #{$desktop} {
+    padding: 135px 0;
+  }
+
+  &__row {
+    max-width: 1025px;
+    margin: 0 auto;
+    @media #{$desktop} {
+      justify-content: center;
+      flex-wrap: wrap;
+      display: flex;
+    }
+  }
+
+  h2 {
+    color: $dark-grey;
+    text-align: center;
+    margin: 0 0 40px 0;
+    @media #{$desktop} {
+      margin: 0 0 50px 0;
+      width: 100%;
+    }
+  }
+  
+  &__member {
+    max-width: 200px;
+    margin: 0 auto;
+    @media #{$desktop} {
+      margin: 0 30px 50px;
+      max-width: none;
+      float: left;
+      width: calc(100% / 4 - 60px);
+    }
+
+    &:nth-child(n+6) {
+      @media #{$desktop} {
+        margin: 30px 30px 0 !important;
+      }
+    }
+
+    &__image {
+      border-radius: 100%;
+      max-width: 200px;
+    }
+
+    &__name {
+      @include fontSize(20px);
+      text-align: center;
+      color: $dark-grey;
+      margin: 18px 0 10px;
+      @media #{$desktop} {
+      }
+    }
+
+    &__job {
+      @include fontSize(17px);
+
+      text-align: center;
+      color: $dark-grey;
+      font-family: $lato;
+      padding: 2px 0 0 0;
+      @media #{$desktop} {
+        @include fontSize(16px);
+        padding: 0;
+      }
+    }
+
+    &__icons {
+      text-align: center;
+      list-style: none;
+      margin: 20px 0 0;
+      padding: 0;
+
+      &__link {
+        display: inline-block;
+        color: $dark-grey;
+        font-size: 24px;
+        padding: 0 6px;
+        @media #{$desktop} {
+          font-size: 20px;
+          padding: 0 6px;
+        }
+
+        a {
+          transition: color 0.2s linear;
+          text-decoration: none;
+          color: $dark-grey;
+
+          &:visited {
+            color: $dark-grey;
+          }
+
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+
+    + .team__member {
+      margin-top: 40px;
+      @media #{$desktop} {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.clear {
+  clear: both;
+}
