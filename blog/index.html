@@ -8,19 +8,12 @@ heading: Canoe blog
   {% if post.img %}
     <a class="post-thumbnail" style="background-image: url({{"../assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
   {% endif %}
+  <!-- Look the author details up from the site config. -->
+  {% assign author = site.data.authors[post.author] %}
   <div class="post-content">
     <h4 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
     <p class="date">Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a> - {% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</p>
     <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
-    <!-- Look the author details up from the site config. -->
-    {% assign author = site.data.authors[post.author] %}
-
-    <!-- Output author details if some exist. -->
-    {% if author %}
-        <span>
-            <!-- Personal Info. -->
-        </span>
-    {% endif %}
   </div>
 </article>
 {% endfor %}

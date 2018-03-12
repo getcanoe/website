@@ -12,6 +12,7 @@
     display: flex;
     @media #{$desktop} {
       flex-direction: row;
+      position: relative;
     }
   }
 
@@ -23,12 +24,14 @@
     margin: 0 0 24px;
     order: 1;
     @media #{$desktop} {
-      vertical-align: middle;
       text-align: right;
       float: right;
       width: 50%;
       margin: 0;
       order: 2;
+      position: absolute;
+      right: 0;
+      bottom: 40px;
     }
 
     &__link {
@@ -63,6 +66,42 @@
     }
   }
 
+  &__sitemap {
+    text-align: center;
+    margin: 0 0 25px;
+    @media #{$desktop} {
+      text-align: left;
+      width: 25%;
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+      padding: 6px 10px;
+      @media #{$desktop} {
+        padding: 8px 0;
+        display: block;
+      }
+
+      a {
+        transition: 0.2s linear;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $lato;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        color: $white;
+
+        @media #{$desktop} {
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+
   .copyright {
     display: inline-block;
     text-align: center;
@@ -73,11 +112,10 @@
     margin: 0;
     order: 2;
     @media #{$desktop} {
-      vertical-align: middle;
-      text-align: left;
-      padding: 20px 0 0;
-      width: 50%;
-      order: 1;
+      position: absolute;
+      text-align: right;
+      right: 0;
+      bottom: 0;
     }
   }
 }
