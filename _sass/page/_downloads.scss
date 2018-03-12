@@ -1,8 +1,7 @@
 .downloads {
-  margin: 50px 20px;
+  margin: 50px 20px 0;
   @media #{$desktop} {
-    max-width: 800px;
-    margin: 80px auto 60px;
+    margin: 80px auto 0;
   }
 
   .section-title {
@@ -19,8 +18,14 @@
       display: flex;
     }
 
-    .desktop, .mobile {
+    .desktop, .mobile, .how-to__row {
       padding: 20px 0 20px;
+      @media #{$desktop} {
+        margin: 20px auto;
+        padding: 0 20px;
+        max-width: 800px;
+        width: 100%;
+      }
     }
 
     .desktop {
@@ -33,6 +38,80 @@
       @media #{$desktop} {
         padding: 40px 0 20px;
         order: 2;
+      }
+    }
+
+    .how-to {
+      background-color: #f5f4f7;
+      @media #{$desktop} {
+        padding: 100px 0 20px;
+        margin: 80px 0 0;
+        order: 3;
+      }
+
+      pre {
+        font-family: Consolas,Monaco,courier new,Courier,monospace;
+        font-size: 14px;
+        line-height: 1.75em;
+        overflow-x: auto!important;
+        padding: 11px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        margin: 15px 0 20px;
+        color: #000;
+        border: 1px solid #dadada;
+        background: none repeat scroll 0 0 #f0f0f0;
+      }
+
+      h4 {
+        margin: 40px 0 15px;
+
+        .icon {
+          font-size: 26px;
+          vertical-align: middle;
+          padding-right: 10px;
+        }
+
+        // &:not(:first-child) {
+        //   margin: 40px 0 12px;
+        // }
+      }
+
+      b {
+        font-weight: 600;
+      }
+
+      p {
+        white-space: pre-line;
+        line-height: 1.5;
+
+        + p {
+          padding: 10px 0 0;
+        }
+      }
+
+      ul {
+        list-style-type:disc;
+        font-family: $lato;
+        color: #363B49;
+        line-height: 1.35;
+        padding: 0 0 0 17px;
+        @media #{$desktop} {
+          line-height: 1.5;
+        }
+
+        li {
+          padding: 5px 0;
+
+          &:last-child {
+            padding: 5px 0 0;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: $blue;
       }
     }
 
