@@ -3,7 +3,7 @@ layout: post
 title: Canoe Beta Week
 date: 2018-03-26 11:00:00
 description: 
-img: test.jpg  
+img: lioncub.jpg  
 author: gokr
 tags: [canoe, mobile, beta] # add tag
 ---
