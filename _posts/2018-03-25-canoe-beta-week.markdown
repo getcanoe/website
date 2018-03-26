@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Canoe Beta Week
-date: 2018-03-26 12:00:00
+date: 2018-03-27 17:00:00
 description: 
 img: test.jpg  
 author: gokr
@@ -24,7 +24,7 @@ I know some people may be disappointed we pulled this in the last minute, we kno
 # The Beta release
 Early in the week we will start with Getting the three desktop releases out, Windows, Linux and OSX. So the desktop will be released a bit "ahead of time" to iron out bugs. They are distributed as downloads.
 
-We also have a [signup page for iOS Testflight](/signup/index.html).
+We also have a [signup page for iOS Testflight](/signup/index.html) - go there and enter your email!
 
 Then we will get the **Android release out on playstore**, hopefully mid week sometime.
 
