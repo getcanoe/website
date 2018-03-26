@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Canoe Beta Week
-date: 2018-03-25 10:00:00
+date: 2018-03-26 12:00:00
 description: 
 img: test.jpg  
 author: gokr
