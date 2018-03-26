@@ -1,5 +1,6 @@
 .downloads {
   margin: 50px 20px 0;
+  width: 100%;
   @media #{$desktop} {
     margin: 80px auto 0;
   }
@@ -11,7 +12,9 @@
 			padding: 0 0 40px;
 		}
   }
-  
+  &__content {
+    padding: 0 20px;
+  }
   &__intro {
     text-align: center;
     line-height: 1.45;
