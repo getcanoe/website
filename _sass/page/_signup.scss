@@ -1,0 +1,137 @@
+.signup {
+  min-height: 300px;
+
+  h2,
+  p,
+  form {
+    text-align: center;
+    color: $dark-grey;
+    line-height: 2em;
+  }
+
+  h2 {
+    margin: 30px 0px;
+  }
+
+  p {
+    color: rgba(0,0,0,.56);
+    font-weight: initial;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  button {
+    margin: .988999em 0;
+    padding: 25px;
+    background: $blue;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover {
+      background: $blue-hover;
+    }
+  }
+
+  .input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em;
+    max-width: 350px;
+    width: calc(100% - 3.2em);
+    vertical-align: top;
+  }
+
+  .input__field {
+    position: relative;
+    display: block;
+    float: right;
+    font-size: 25px;
+    padding: 0.8em;
+    width: 60%;
+    border: none;
+    border-radius: 0;
+    background: #f0f0f0;
+    color: $dark-grey;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-appearance: none; /* for box shadows to show on iOS */
+  }
+  .input--hideo {
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .input__field--hideo {
+    padding: 0.85em 2.85em 0.85em 3em;
+    background: transparent;
+    -webkit-transform: translate3d(1em, 0, 0);
+    transform: translate3d(1em, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  .input__label--hideo {
+    position: absolute;
+    padding: 1.25em 0 0;
+    width: 4em;
+    height: 100%;
+  }
+
+  .input__label--hideo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 4em;
+    height: 100%;
+    background: $blue;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  .fa-fw {
+    width: initial;
+  }
+
+  .fa-envelope::before {
+    font-size: 30px;
+  }
+
+  .icon--hideo {
+    font-family: 'FontAwesome' !important;
+    color: #fff;
+    -webkit-transform: scale3d(1, 1, 1); /* Needed for Chrome bug */
+    transform: scale3d(1, 1, 1);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  .input__label-content--hideo {
+    position: absolute;
+    top: 100%;
+  }
+
+  .input__field--hideo:focus {
+    border: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .input__field--hideo:focus + .input__label--hideo::before {
+    -webkit-transform: scale3d(0.8, 1, 1);
+    transform: scale3d(0.8, 1, 1);
+  }
+
+  .input__field--hideo:focus + .input__label--hideo .icon--hideo {
+    -webkit-transform: scale3d(0.6, 0.6, 1);
+    transform: scale3d(0.6, 0.6, 1);
+  }
+}

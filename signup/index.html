@@ -3,12 +3,17 @@ layout: signup
 title: Canoe | Signup
 heading: Signup for Canoe iOS Testflight
 ---
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <p class="notice">Enter your email to get listed for iOS Canoe Testflight. We will NOT save your emails after sending out the invite! Promise.</p>
-
-            <form method="post" action="contact.php">
-                <div id="subscribe">
-                        <input type="email" name="senderEmail" placeholder="Email address" required>
-                    <button type="submit">Request iOS Testflight</button>
-                </div>
-            </form>
-
+<form method="post" action="contact.php">
+    <div id="subscribe">
+      <span class="input input--hideo">
+        <input type="email" name="senderEmail" required class="input__field input__field--hideo" type="text" id="input-42" />
+        <label class="input__label input__label--hideo" for="input-42">
+            <i class="fa fa-fw fa-envelope icon icon--hideo"></i>
+            <span class="input__label-content input__label-content--hideo">Email</span>
+          </label>
+        </span>
+      <button type="submit">Signup</button>
+    </div>
+</form>

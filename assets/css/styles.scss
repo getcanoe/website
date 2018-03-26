@@ -1,44 +1,36 @@
 ---
 ---
+
 // Import needed SASS files
+
 // Utils
 @import "utils/normalize";
 
-// Old
-// @import "old/media";
-// @import "old/syntax";
-// @import "old/variables";
-
-// @import "old/parts/home/hero";
-// @import "old/parts/home-page";
-// @import "old/parts/post-page";
-// @import "old/parts/tag";
-
-
 // Base 
-@import "base/variables";
 @import "base/mixins";
+@import "base/variables";
 
 // Page 
+@import "page/archive";
 @import "page/blog";
-@import "page/post";
 @import "page/contribute";
 @import "page/downloads";
-@import "page/archive";
+@import "page/post";
+@import "page/signup";
 
 // Layout 
-@import "layout/navigation";
-@import "layout/typography";
 @import "layout/footer";
 @import "layout/layout";
+@import "layout/navigation";
+@import "layout/typography";
 
 // Components 
+@import "components/anouncement";
+@import "components/donate";
 @import "components/hero";
 @import "components/intro";
-@import "components/wallet";
 @import "components/team";
-@import "components/donate";
-@import "components/anouncement";
+@import "components/wallet";
 
 
 
