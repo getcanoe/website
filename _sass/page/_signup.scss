@@ -40,7 +40,7 @@
     z-index: 1;
     display: inline-block;
     margin: 1em;
-    max-width: 350px;
+    max-width: 650px;
     width: calc(100% - 3.2em);
     vertical-align: top;
   }
@@ -65,7 +65,7 @@
   }
 
   .input__field--hideo {
-    padding: 0.85em 2.85em 0.85em 3em;
+    padding: 0.85em 7.85em 0.85em 3em;
     background: transparent;
     -webkit-transform: translate3d(1em, 0, 0);
     transform: translate3d(1em, 0, 0);
