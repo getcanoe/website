@@ -10,7 +10,7 @@ tags: [canoe, mobile, beta] # add tag
 
 The Canoe Beta **release week** is upon us! As of yesterday we closed our last issue blocking the [Canoe](https://getcanoe.io) Beta release, so now its time!
 
-This article describes how we hope to get it all done.
+This article describes how we hope to get it all done, and **where to sign up for iOS Testflight**.
 
 <!--more-->
 
@@ -22,22 +22,18 @@ At the same time the official Nano core team has been swamped with work on the c
 I know some people may be disappointed we pulled this in the last minute, we know it works amazingly well and made Canoe a much more fun experience, but this solution was built by Tyler to be fully supported by core and the whole community - and given that - it felt best to take it out and give core a chance to engage. We hope this was the right thing to do.
 
 # The Beta release
-Early in the week we will start with:
+Early in the week we will start with Getting the three desktop releases out, Windows, Linux and OSX. So the desktop will be released a bit "ahead of time" to iron out bugs. They are distributed as downloads.
 
-* Getting a signup page up for the iOS testflight.
-* Getting the three desktop releases out, Windows, Linux and OSX.
+We also have a [signup page for iOS Testflight](/signup/index.html).
 
-So the desktop will be released a bit "ahead of time" to iron out bugs. They are distributed as downloads.
+Then we will get the **Android release out on playstore**, hopefully mid week sometime.
 
-Then we will get the **Android release out on playstore**.
-
-Finally, the **iOS release will be made available through testflight at the end of the week**.
+Finally, the **iOS Testflight starts at the end of the week**.
 
 # Issue tracking
-
 All work is driven via [github's issues and milestones](https://github.com/getcanoe/canoe/issues) and you can see any [open issues for the beta on its milestone](https://github.com/getcanoe/canoe/milestone/2).
 
-When you use Canoe, please report issues back to us and we will try to fix them as best we can.
+When you use Canoe, please report issues back to us and we will try to fix them as best we can!
 
 # When is 1.0?
 Let's together find out how much more fixes we want and need in Canoe before declaring a proper 1.0 release.
@@ -45,7 +41,6 @@ Let's together find out how much more fixes we want and need in Canoe before dec
 There is a list of things we would like to include in 1.0 that's not in the current Beta, like for example a proper alias solution. And there are surely bugs to be fixed also.
 
 # Helping us
-
-If you have questions or want to help out - there is always room for more people helping us - you can always reach us on our [discord server](https://discord.gg/ecVcJM3).
+If you have questions or want to help out - there is always room for more people helping us - you can always reach us on our [discord server](https://discord.gg/ecVcJM3). See [more here](/contribute.html).
 
 Thank you, the Canoe team
