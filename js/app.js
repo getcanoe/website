@@ -17,7 +17,7 @@ $(document).ready(function() {
   }
 
   $("#download-button").click(function(e) {
-    e.preventDefault();
+    //e.preventDefault();
   });
 
   var i = 2;
