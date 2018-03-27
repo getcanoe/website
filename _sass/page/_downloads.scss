@@ -56,6 +56,9 @@
     }
 
     .mobile {
+      a {
+        pointer-events: none;
+      }
       @media #{$desktop} {
         padding: 40px 0 20px;
         order: 2;
@@ -218,11 +221,8 @@
           padding: 8px 0 0;
 
           a {
-            pointer-events: none;
-            
-
             @include fontSize(13px);
-            color: #b3b3b3;
+            color: #237ed3;
             @media #{$desktop} {
               @include fontSize(13px);
             }

@@ -31,7 +31,7 @@ Canoe has QR code scanning (and QR code generation) for both accounts and seeds 
 
 Canoe uses **precalculated PoW per account** (currently server side PoW except for Linux which can also do client side) which means regular use of Canoe is instant.
 
-Canoe has a **pretty good lock security** mechanism based on a soft and hard inactivity timeout, detecting when Canoe goes into background - and user choice of locking methods including PIN, fingerprint or password. The model is described in more detail [in another post](https://getcanoe.io/2018/02/11/security-in-beta.html).
+Canoe has a **lock security** mechanism based on a soft and hard inactivity timeout, detecting when Canoe goes into background - and user choice of locking methods including PIN, fingerprint or password. The model is described in more detail [in another post](https://getcanoe.io/2018/02/11/security-in-beta.html).
 
 Canoe also handles **multiple accounts** including attributes like a readable name, the chosen representative, color of account in the UI, if balance should be hidden etc. And there is an **address book** with name, email, gravatar integration and incremental search.
 
