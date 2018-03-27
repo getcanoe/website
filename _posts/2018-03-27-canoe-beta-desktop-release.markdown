@@ -29,7 +29,7 @@ For desktop, the wallet is stored in [NW.js](https://nwjs.io/) localstorage, whi
 
 Canoe has QR code scanning (and QR code generation) for both accounts and seeds and follows the established QR/URL conventions from the wiki. Whenever you see a little scanner icon in a field, you can tap it to use the scanner. Scanner also works fine using the computer webcam!
 
-Cano uses **precalculated PoW per account** (currently server side PoW except for Linux which can also do client side) which means regular use of Canoe is instant.
+Canoe uses **precalculated PoW per account** (currently server side PoW except for Linux which can also do client side) which means regular use of Canoe is instant.
 
 Canoe has a **pretty good lock security** mechanism based on a soft and hard inactivity timeout, detecting when Canoe goes into background - and user choice of locking methods including PIN, fingerprint or password. The model is described in more detail [in another post](https://getcanoe.io/2018/02/11/security-in-beta.html).
 
@@ -39,7 +39,7 @@ You can export and import the wallet as a file, fully encrypted. This preserves 
 
 All transactions are **timestamped by the Canoe server**, regardless if your Canoe is running or not. This means you have proper timestamps in the account history view, as the time the transactions were detected by our server.
 
-Cano communicates with **no polling at all** using pub/sub MQTT. This means our server is not overloaded with polling clients and it also means that transactions between Canoe wallets are sub second, if the precalculated PoW is ready to go, which it should be in most natural cases.
+Canoe communicates with **no polling at all** using pub/sub MQTT. This means our server is not overloaded with polling clients and it also means that transactions between Canoe wallets are sub second, if the precalculated PoW is ready to go, which it should be in most natural cases.
 
 Canoe has a full **live table of conversion rates** to fiat currencies to show all amounts in both Nano and in the local currency of your choice.
 
