@@ -7,9 +7,7 @@ img: apollo15.jpg
 author: gokr
 tags: [canoe, mobile, beta] # add tag
 ---
- The Canoe team is proud to release the Beta Release - version 0.3.4 of Canoe  - for Desktops! This is Canoe for Linux, OSX and Windows.
-
-Later this week we are releasing the same Canoe for Android and iOS also - but Desktop is first out of the gate!
+ The Canoe team is proud to release the Beta Release - version 0.3.4 of Canoe  - for Desktops! This is Canoe for **Linux, OSX and Windows**. Later this week we are releasing the same Canoe for Android and iOS also - but Desktop is first out of the gate! And if you are keen on iOS you can [sign up for Testflight here](/signup). Android will probably be released publically.
 
 <!--more-->
 
@@ -27,29 +25,25 @@ The wallet is stored encrypted only in localstorage on your device/computer usin
 
 For desktop, the wallet is stored in [NW.js](https://nwjs.io/) localstorage, which is not inside the extracted directory. This means you can delete the whole Canoe directory, install a newer version, and your wallet will still be available as before. See [the help page](/help/) for details on where the wallet is stored.
 
-Canoe has QR code scanning (and QR code generation) for both accounts and seeds and follows the established QR/URL conventions from the wiki. Whenever you see a little scanner icon in a field, you can tap it to use the scanner. Scanner also works fine using the computer webcam!
+* Canoe has QR code scanning (and QR code generation) for both accounts and seeds and follows the established QR/URL conventions from the wiki. Whenever you see a little scanner icon in a field, you can tap it to use the scanner. Scanner also works fine using the computer webcam!
+* Canoe uses **precalculated PoW per account** (currently server side PoW except for Linux which can also do client side) which means regular use of Canoe is instant.
+* Canoe has a **lock security** mechanism based on a soft and hard inactivity timeout, detecting when Canoe goes into background - and user choice of locking methods including PIN, fingerprint or password. The model is described in more detail [in another post](https://getcanoe.io/2018/02/11/security-in-beta.html).
+* Canoe also handles **multiple accounts** including attributes like a readable name, the chosen representative, color of account in the UI, if balance should be hidden etc.
+* And there is an **address book** with name, email, gravatar integration and incremental search.
+* Canoe can export and import the wallet as a file, fully encrypted. This preserves more metadata than using only the seed import/export. The file also contains the address book.
+* All transactions are **timestamped by the Canoe server**, regardless if your Canoe is running or not. This means you have proper timestamps in the account history view, as the time the transactions were detected by our server.
+* Canoe communicates with **no polling at all** using pub/sub MQTT. This means our server is not overloaded with polling clients and it also means that transactions between Canoe wallets are sub second, if the precalculated PoW is ready to go, which it should be in most natural cases.
+* Canoe has a full **live table of conversion rates** to fiat currencies to show all amounts in both Nano and in the local currency of your choice.
+* Canoe also has sound effects for incoming transactions, sends and a few other things. 
+* And finally, we have almost 60 contributors signed up [helping us](https://poeditor.com/join/project/cnSZa85DRN) **translating Canoe to 31 languages** (and counting)!
 
-Canoe uses **precalculated PoW per account** (currently server side PoW except for Linux which can also do client side) which means regular use of Canoe is instant.
-
-Canoe has a **lock security** mechanism based on a soft and hard inactivity timeout, detecting when Canoe goes into background - and user choice of locking methods including PIN, fingerprint or password. The model is described in more detail [in another post](https://getcanoe.io/2018/02/11/security-in-beta.html).
-
-Canoe also handles **multiple accounts** including attributes like a readable name, the chosen representative, color of account in the UI, if balance should be hidden etc. And there is an **address book** with name, email, gravatar integration and incremental search.
-
-You can export and import the wallet as a file, fully encrypted. This preserves more metadata than using only the seed import/export. The file also contains the address book.
-
-All transactions are **timestamped by the Canoe server**, regardless if your Canoe is running or not. This means you have proper timestamps in the account history view, as the time the transactions were detected by our server.
-
-Canoe communicates with **no polling at all** using pub/sub MQTT. This means our server is not overloaded with polling clients and it also means that transactions between Canoe wallets are sub second, if the precalculated PoW is ready to go, which it should be in most natural cases.
-
-Canoe has a full **live table of conversion rates** to fiat currencies to show all amounts in both Nano and in the local currency of your choice.
-
-Canoe also has sound effects for incoming transactions, sends and a few other things. 
-
-We have almost 60 contributors signed up [helping us](https://poeditor.com/join/project/cnSZa85DRN) **translating Canoe to 31 languages** (and counting)!
-
-The backend for Canoe is also fully open source and we are hosting the current server at getcanoe.io, but there is nothing stopping the community from running more server instances around the globe.
+The backend for Canoe is also fully open source and we are hosting the current server at getcanoe.io, but there is nothing stopping the community from running more server instances around the globe. If you are interested in this, contact us!
 
 Did we miss some feature? We probably did, because there is quite a lot. Hop in and explore!
+
+<video width="480" height="320" controls="controls">
+  <source src="/assets/movies/overview.mp4" type="video/mp4">
+</video>
 
 # The Project
 Canoe is Open Source, both in license (MIT) but perhaps more importantly, **in spirit**. Anyone can join and help, we build it together. All discussions around where development is going is public on our discord and we are currently **6 in the official team** (Göran, Rami, Stef, Cedric, Mike and Tyler) and perhaps 5-10 more actively helping with testing, ideas and so on. Joining in is just a matter of **doing the walk and not just the talk**. :)
