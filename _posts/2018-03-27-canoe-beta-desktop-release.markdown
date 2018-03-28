@@ -41,7 +41,7 @@ The backend for Canoe is also fully open source and we are hosting the current s
 
 Did we miss some feature? We probably did, because there is quite a lot. Hop in and explore!
 
-<video width="480" height="320" controls="controls">
+<video width="100%" controls="controls">
   <source src="/assets/movies/overview.mp4" type="video/mp4">
 </video>
 
