@@ -56,9 +56,6 @@
     }
 
     .mobile {
-      a {
-        pointer-events: none;
-      }
       @media #{$desktop} {
         padding: 40px 0 20px;
         order: 2;
