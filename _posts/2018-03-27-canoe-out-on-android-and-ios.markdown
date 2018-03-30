@@ -7,7 +7,7 @@ img: allplatforms.jpg
 author: gokr
 tags: [canoe, mobile, beta] # add tag
 ---
- Earlier this week we started by [releasing Canoe Beta version 0.3.4 for Linux, OSX and Windows](2018/03/27/canoe-beta-desktop-release.html). Then as planned we also released it for **Android** with a superb reception making us blush, but we didn't post about it because we also wanted iOS out first, and to be honest - people have posted enough anyway.
+ Earlier this week we started by [releasing Canoe Beta version 0.3.4 for Linux, OSX and Windows](2018/03/27/canoe-beta-desktop-release.html). Then as planned we also [released it for Android](https://play.google.com/store/apps/details?id=io.getcanoe.canoe) with a **superb reception** making us blush, but we didn't post about it because we also wanted iOS out first, and to be honest - people have posted enough anyway.
  
  Now the **time has come for iOS!** We are so far running it as a Test flight and you can [sign up for it here](/signup) and we are pumping it out at least daily, so you will not have to wait long if you sign up.
 
