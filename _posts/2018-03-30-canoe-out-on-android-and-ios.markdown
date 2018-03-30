@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Canoe Beta Out on Android and iOS!
-date: 2018-03-30 19:00:00
+date: 2018-03-30 18:30:00
 description: 
 img: allplatforms.jpg  
 author: gokr
