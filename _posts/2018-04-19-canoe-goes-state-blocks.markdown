@@ -7,7 +7,7 @@ img: stateblocks.jpg
 author: gokr
 tags: [canoe, mobile, beta] # add tag
 ---
- We have been working hard to get an updated Canoe out with support for the new state blocks (aka Universal Blocks). In fact you all **MUST** upgrade Canoe in order to be able to handle state blocks properly!
+ We have been working hard to get an [updated Canoe](/download) out with support for the new state blocks (aka Universal Blocks). In fact you all **MUST** upgrade Canoe in order to be able to handle state blocks properly!
 
  Let's say that again: **YOU MUST UPGRADE TO 0.3.6!**
 
@@ -70,7 +70,9 @@ In addition to state blocks, this is a list covering all the other changes in 0.
 # Going Forward
 We hope the 0.3.6 release will move smoothly and that it will properly deal with the upcoming canary2. Since this was super high priority, all other things were kinda put aside.
 
-But now, going forward, **we aim for 1.0!** And one thing we really want to do is to get **all the new languages in**! We have now over 90 people working on translating Canoe to 34 languages - that's just amazing.
+But now, going forward, **we aim for 1.0!**
+
+And one thing we really want to do is to get **all the new languages in**! We have now [over 90 people working on translating Canoe](https://poeditor.com/join/project/cnSZa85DRN) to **34 languages** - that's just amazing!
 
 This version still only has 16 languages, but we promise to enable all new languages that reach 90% coverage in the next release. We just didn't have enough time for 0.3.6.
 
