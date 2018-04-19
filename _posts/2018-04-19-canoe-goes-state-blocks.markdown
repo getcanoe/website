@@ -35,7 +35,7 @@ In addition to state blocks, this is a list covering all the other changes in 0.
 
 * Canoe now has an improved Send workflow made by Tyler. Now one can more easily choose the from account when entering the amount, and one can see the balance in that account.
 
-* Fix to get Canoe working on OSX v10
+* Fix to get Canoe working on iOS 10.x
 
 * Fixed searching and paging when searching among contacts in send page.
 
