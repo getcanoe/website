@@ -53,3 +53,5 @@ In version 0.3.5 (please upgrade immediately!) you will have to recreate your ac
 ##### What is ‘Server Side PoW’?
 
 Every transaction needs to perform a calculation (referred to as "PoW" - Proof Of Work) as a security mechanism against transaction spamming. Desktop applications generally have no problem with this, however mobile devices would require a lot of processing power and energy, therefore it is disabled on these devices and the work is delegated to the Canoe server instead.
+
+Currently only Linux Canoe can do client side PoW. Windows and OSX will follow and then we will see how we deal with mobile.
