@@ -34,9 +34,11 @@ The block chains in your Canoe wallet may be out of sync with the network. You c
 
 This operation is harmless but can take some time as it will reload all blockchains associated with your wallet from the Nano network.
 
+Also, as of Canoe version 0.3.6 that handles so called "state blocks" - be aware that the block explorers may not yet show them properly.
+
 ##### Can I use the same wallet (seed) and its’s accounts on different devices (e.g. mobile and desktop)?
 
-It’s possibile, but at this time (before Canoe implements proper wallet sharing on multiple devices) we recommend using a different wallet for each device. Using the same wallet across devices could lead to your wallet going out of sync. You will need to "Repair" your wallet as described above, to get your wallet in sync again.
+It’s possible, but at this time (before Canoe implements proper wallet sharing on multiple devices) we recommend using a different wallet for each device. Using the same wallet (the same seed) across devices leads to your wallet going out of sync. You will need to "Repair" your wallet as described above, to get your wallet in sync again. This will be fixed in version 0.3.7 of Canoe.
 
 ##### I want to backup my address book.
 
@@ -44,7 +46,9 @@ Go to `Settings → Export Wallet` and use the File tab. This will export your w
 
 ##### I have imported my wallet using the seed, where are my other accounts I created?
 
-You can recreate your accounts by clicking the `+` button on the home tab. A seed determines all associated accounts of the wallet, in the same order. This means you will always be able to restore them.
+In Canoe version 0.3.6 or newer, all your accounts should be automatically detected and recreated with full history and balance.
+
+In version 0.3.5 (please upgrade immediately!) you will have to recreate your accounts by clicking the `+` button on the home tab. A seed determines all associated accounts of the wallet, in the same order. This means you will always be able to restore them.
 
 ##### What is ‘Server Side PoW’?
 
