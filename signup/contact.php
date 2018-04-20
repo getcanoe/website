@@ -4,7 +4,9 @@ $subject="Canoe signup";
 $senderEmail=$_POST["senderEmail"];
 $mailBody="Email: $senderEmail\n\n";
 
-mail($recipient, $subject, $mailBody, "From: <$senderEmail>");
+file_put_contents("/home/gokr/signups.txt", "$senderEmail\n", FILE_APPEND | LOCK_EX);
+
 header("Location: https://getcanoe.io/signup/thanks.html");
 die();
 ?>
+
