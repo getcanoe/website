@@ -11,9 +11,16 @@ We just released Canoe 0.9.12 fixing a small but highly troublesome bug. You can
 
 <!--more-->
 
-It turns out that Canoe had a bug that **originates from the Nanowallet.io codebase**, but doesn't seem to cause the same problem there as it does in Canoe. We are informing Nanowallet.io of course, and it's a oneliner fix.
+It turns out that Canoe had a bug that has been in the Nanowallet codebase (which Canoe successfully has been reusing) since the beginning. The bug triggers the bad behavior in Canoe, but doesn't seem to cause a problem in Nanowallet, probably due to different block propagation code. We are still informing Nanowallet.io of course, and it's a oneliner fix.
 
 Download [Canoe 0.9.12](/download).
+
+# Rapid response
+We got the information from the community that Nano had been lost for at least one user and since we didn't really know at the time what the issue was - we decided to temporarily stop the Canoe server. Tyler and Göran then proceeded to investigate and debug the issue as it was described, in fact, Tyler had already been working on a similar issue in other wallets. **We felt this was an appropriate call, since it actually involved losing funds**.
+
+With this new bug fix release the backend is up and running again. We hope this didn't cause any imminent troubles for our users, better safe than sorry.
+
+Also, earlier this weekend we had another silly incident involving the backend server being accidentally shut down due to credit card fumbling. That's on me - Göran - sorry about that!
 
 # Scenario
 The bug happens when Canoe starts and has a **newly created account with no blocks in it, and more than one pending send into that account**. This scenario was discovered now due to a lot of people migrating to new wallets and thus transferring multiple times into newly created accounts.
