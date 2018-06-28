@@ -37,21 +37,21 @@ Last night me and Lee Bousfield (PlasmaPower) wrote custom code to comb through 
 
 We used slightly different logic to find the cases, but in the end **we both found exactly the same 8 cases, of which 4 are real incidents and not provoked test cases**:
 
-* [xrb_1ye1b7qanbuk91tno81ndaoihzjoas9kr3mzzexq846bjsinjyz9okhnbmmn](https://www.nanode.co/account/xrb_1ye1b7qanbuk91tno81ndaoihzjoas9kr3mzzexq846bjsinjyz9okhnbmmn)
+* [xrb_1ye1...hnbmmn](https://www.nanode.co/account/xrb_1ye1b7qanbuk91tno81ndaoihzjoas9kr3mzzexq846bjsinjyz9okhnbmmn)
     * This is NiF's account, 1 bad send of **122.422269** Nano.
-* [xrb_3ccm75pn1u9uwquc3uq8jufh6iz6yqd7rc38x7iiq3qtdj511a35srpryrx8](https://www.nanode.co/account/xrb_3ccm75pn1u9uwquc3uq8jufh6iz6yqd7rc38x7iiq3qtdj511a35srpryrx8)
+* [xrb_3ccm...pryrx8](https://www.nanode.co/account/xrb_3ccm75pn1u9uwquc3uq8jufh6iz6yqd7rc38x7iiq3qtdj511a35srpryrx8)
     * This is fabfab's account, 1 bad send of **200 Nano. We are still wondering a bit over this one**.
-* [xrb_3sxgbz88bngp85e1maijc3eu7nkgxg7mx7ygoen764x1rd1i1a5cedogky4k](https://www.nanode.co/account/xrb_3sxgbz88bngp85e1maijc3eu7nkgxg7mx7ygoen764x1rd1i1a5cedogky4k)
+* [xrb_3sxg...ogky4k](https://www.nanode.co/account/xrb_3sxgbz88bngp85e1maijc3eu7nkgxg7mx7ygoen764x1rd1i1a5cedogky4k)
     * This account made 1 bad send of **9.797974 Nano**.
-* [xrb_1k7tsusd6bax6w98rcu81ewus7ruki7p3bpeohgdhfgkqozy3w5duoe5w3oh](https://www.nanode.co/account/xrb_1k7tsusd6bax6w98rcu81ewus7ruki7p3bpeohgdhfgkqozy3w5duoe5w3oh)
+* [xrb_1k7t...e5w3oh](https://www.nanode.co/account/xrb_1k7tsusd6bax6w98rcu81ewus7ruki7p3bpeohgdhfgkqozy3w5duoe5w3oh)
     * This account made 1 bad send of **8 Nano**.
-* [xrb_11fx5bq37ap3cdhji3jrh5u7p6ngcunzo6hskbokau6ybgnf7566qbfuj7t7](https://www.nanode.co/account/xrb_11fx5bq37ap3cdhji3jrh5u7p6ngcunzo6hskbokau6ybgnf7566qbfuj7t7)
+* [xrb_11fx...fuj7t7](https://www.nanode.co/account/xrb_11fx5bq37ap3cdhji3jrh5u7p6ngcunzo6hskbokau6ybgnf7566qbfuj7t7)
     * This is a test account by Tyler I think, when we debugged the issue.
-* [xrb_3qmjya5znq5zcoaacxbuaz56aaqrjx8ia8y7d484ompir7e9jmfx3bpgr65i](https://www.nanode.co/account/xrb_3qmjya5znq5zcoaacxbuaz56aaqrjx8ia8y7d484ompir7e9jmfx3bpgr65i)
+* [xrb_3qmj...pgr65i](https://www.nanode.co/account/xrb_3qmjya5znq5zcoaacxbuaz56aaqrjx8ia8y7d484ompir7e9jmfx3bpgr65i)
     * This is (we think) a test by Stef that made 1 bad send of 0.009900 Nano.
-* [xrb_14d8aw7oq6aaz6z6n84836uy3h79emjf9o4utnpq777w3xekrwrmbm1rtofe](https://www.nanode.co/account/xrb_14d8aw7oq6aaz6z6n84836uy3h79emjf9o4utnpq777w3xekrwrmbm1rtofe)
+* [xrb_14d8...1rtofe](https://www.nanode.co/account/xrb_14d8aw7oq6aaz6z6n84836uy3h79emjf9o4utnpq777w3xekrwrmbm1rtofe)
     * This is Stef's test account verifying the bug, made 3 bad sends, not just one, totalling 0.0199 Nano.
-* [xrb_3orh3xhqihcxz1psa3uqsz8ngrcaitgg13rt61f5zyfm5hgtpsgmhjjqjbrj](https://www.nanode.co/account/xrb_3orh3xhqihcxz1psa3uqsz8ngrcaitgg13rt61f5zyfm5hgtpsgmhjjqjbrj)
+* [xrb_3orh...jqjbrj](https://www.nanode.co/account/xrb_3orh3xhqihcxz1psa3uqsz8ngrcaitgg13rt61f5zyfm5hgtpsgmhjjqjbrj)
     * This is NiF's test account, made 1 bad send of 0.029990 Nano.
 
 As far as we can tell all of the above bad sends were made by Canoe, not NWC. The NWC wallet had a different bug which doesn't lead to the above bad sends. We can also note that all these open blocks use the Canoe representative, which is the default in Canoe. The NWC wallet can not change representative yet, so it can not produce these blocks!
