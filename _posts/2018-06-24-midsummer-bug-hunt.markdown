@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Midsummer bug hunt
+title: Midsummer Bug Hunt
 date: 2018-06-24 12:30:00
 description: 
 img: midsummer.jpg
