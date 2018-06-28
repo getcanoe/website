@@ -38,9 +38,9 @@ Last night me and Lee Bousfield (PlasmaPower) wrote custom code to comb through 
 We used slightly different logic to find the cases, but in the end **we both found exactly the same 8 cases, of which 4 are real incidents and not provoked test cases**:
 
 * [xrb_1ye1...hnbmmn](https://www.nanode.co/account/xrb_1ye1b7qanbuk91tno81ndaoihzjoas9kr3mzzexq846bjsinjyz9okhnbmmn)
-    * This is NiF's account, 1 bad send of **122.422269** Nano.
+    * This is NiF's account, 1 bad send of **122.422269 Nano**.
 * [xrb_3ccm...pryrx8](https://www.nanode.co/account/xrb_3ccm75pn1u9uwquc3uq8jufh6iz6yqd7rc38x7iiq3qtdj511a35srpryrx8)
-    * This is fabfab's account, 1 bad send of **200 Nano. We are still wondering a bit over this one**.
+    * This is fabfab's account, 1 bad send of **200 Nano**. EDIT: Described as if it happened in NWC, but it must have happened after migration to Canoe.
 * [xrb_3sxg...ogky4k](https://www.nanode.co/account/xrb_3sxgbz88bngp85e1maijc3eu7nkgxg7mx7ygoen764x1rd1i1a5cedogky4k)
     * This account made 1 bad send of **9.797974 Nano**.
 * [xrb_1k7t...e5w3oh](https://www.nanode.co/account/xrb_1k7tsusd6bax6w98rcu81ewus7ruki7p3bpeohgdhfgkqozy3w5duoe5w3oh)
@@ -56,7 +56,11 @@ We used slightly different logic to find the cases, but in the end **we both fou
 
 As far as we can tell all of the above bad sends were made by Canoe, not NWC. The NWC wallet had a different bug which doesn't lead to the above bad sends. We can also note that all these open blocks use the Canoe representative, which is the default in Canoe. The NWC wallet can not change representative yet, so it can not produce these blocks!
 
-Finally, the funds were sent to accounts that noone can reach, **so they are burnt Nano**, it's not someone else that got them. NiF has gotten a fair bit of his Nano back, the Canoe team gave 61 (half lost), since we had 110 in our donation account, but NiF promptly bounced 30 back as a donation. ;) The other bad accounts will be sent matching Nanos, except for the one with 200 lost. That account still needs more analysis, both me and Lee are confused around what really happened there, and will try to figure it out more.
+Finally, the funds were sent to accounts that noone can reach, **so they are burnt Nano**, it's not someone else that got them. NiF has gotten a fair bit of his Nano back, the Canoe team gave 61 (half lost), since we had 110 in our donation account, but NiF promptly bounced 30 back as a donation. ;)
+
+The other bad accounts will be sent matching Nanos, <strike>except for the one with 200 lost. That account still needs more analysis, both me and Lee are confused around what really happened there, and will try to figure it out more.</strike>
+
+EDIT: Confusion around fabfab's account is cleared, it was subjected to the same bug in Canoe - but after having been migrated over from NWC.
 
 # Counter measures
 
