@@ -7,7 +7,7 @@ img: apollo15.jpg
 author: gokr
 tags: [canoe, mobile, beta] # add tag
 ---
- The Canoe team is proud to release the Beta Release - version 0.3.4 of Canoe  - for Desktops! This is Canoe for **Linux, OSX and Windows**. Later this week we are releasing the same Canoe for Android and iOS also - but Desktop is first out of the gate! And if you are keen on iOS you can [sign up for Testflight here](/signup). Android will probably be released publically.
+ The Canoe team is proud to release the Beta Release - version 0.3.4 of Canoe  - for Desktops! This is Canoe for **Linux, OSX and Windows**. Later this week we are releasing the same Canoe for Android and iOS also - but Desktop is first out of the gate! And if you are keen on iOS you can sign up for Testflight. Android will probably be released publically.
 
 <!--more-->
 
